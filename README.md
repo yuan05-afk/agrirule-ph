@@ -86,7 +86,8 @@ api/wsgi.py      Vercel serverless entry point
 ## Run locally
 
 ```powershell
-cd "Final Project\agriruleph_project"
+git clone https://github.com/yuan05-afk/agrirule-ph.git
+cd agrirule-ph
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
