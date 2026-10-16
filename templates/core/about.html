@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %}About | AgriRulePH{% endblock %}
+{% block content %}
+<div class="max-w-3xl mx-auto">
+    <h1 class="text-3xl tracking-tight font-semibold text-stone-900 mb-2">About AgriRulePH</h1>
+    <p class="text-stone-500 text-sm mb-8 pb-6 border-b border-stone-200">Final Project Documentation, System Scope, and Current Build Status</p>
+
+    <div class="space-y-8 text-stone-700 text-sm leading-relaxed">
+        <section>
+            <h2 class="text-xl tracking-tight font-semibold text-stone-900 mb-3">Project Overview</h2>
+            <p>AgriRulePH is a Django + Supabase PostgreSQL rule-based decision support system designed to help small-scale farmers choose suitable crops using transparent IF-THEN agricultural rules. The system captures farm conditions, computes crop suitability scores, highlights avoid-risk crops, and presents explainable recommendations with decision-oriented analytics.</p>
+        </section>
+        <section>
+            <h2 class="text-xl tracking-tight font-semibold text-stone-900 mb-3">Current System Capabilities</h2>
+            <ul class="list-disc list-outside pl-5 space-y-2">
+                <li>Consultation flow with structured farm inputs: season, soil type, water availability, farm type, soil pH, budget, and crop preference.</li>
+                <li>Rule-based inference engine with positive, negative, and avoid logic for deterministic crop scoring.</li>
+                <li>Results page with top recommendations, confidence labels, explanation traces, condition assessment, action recommendations, and avoid summaries.</li>
+                <li>Expanded recommendation view with top-10 options and trace visibility for deeper review.</li>
+                <li>Decision Analytics page with top recommendation podium, top-10 comparison, category opportunity chart, condition match strength by factor, trade-off comparison, what-if scenarios, suitability tiers, field adjustment opportunities, and insights table.</li>
+                <li>Staff-only dashboard for crop/rule management and consultation records.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 class="text-xl tracking-tight font-semibold text-stone-900 mb-3">How the Rule-Based Method Works</h2>
+            <p>Each crop starts at a base score. Matched positive rules add points, negative rules subtract points, and avoid rules apply strong penalties and avoidance flags. After all active rules are processed, crops are ranked by final score. The system records explanation traces so users can inspect which conditions influenced each recommendation.</p>
+        </section>
+        <section>
+            <h2 class="text-xl tracking-tight font-semibold text-stone-900 mb-3">Decision Support Focus</h2>
+            <p>AgriRulePH is built to support practical decision-making, not just output rankings. It emphasizes interpretation through recommendation roles, score-gap awareness, avoid risk summaries, and scenario-based sensitivity checks so users can understand both strong options and trade-offs.</p>
+        </section>
+        <section>
+            <h2 class="text-xl tracking-tight font-semibold text-stone-900 mb-3">Scope and Limitations</h2>
+            <ul class="list-disc list-outside pl-5 space-y-2">
+                <li>The system is deterministic and rule-based; it does not use machine learning or predictive probability models.</li>
+                <li>It does not currently integrate real-time weather, pest alerts, geospatial microclimate data, or live market pricing.</li>
+                <li>Outputs depend on entered conditions and the configured rule base; results should be interpreted as decision support guidance.</li>
+                <li>Final planting decisions should still be validated with local agriculture offices and field-specific assessments.</li>
+            </ul>
+        </section>
+    </div>
+</div>
+{% endblock %}

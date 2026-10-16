@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}{% if is_edit %}Edit Crop{% else %}Add Crop{% endif %}{% endblock %}
+{% block content %}
+<div class="max-w-3xl mx-auto">
+    <h1 class="text-2xl tracking-tight font-semibold text-stone-900 mb-6">{% if is_edit %}Edit Crop{% else %}Add Crop{% endif %}</h1>
+    <div class="bg-white border border-stone-200 rounded-2xl shadow-sm overflow-hidden p-6">
+        <form method="post" class="space-y-5">
+            {% csrf_token %}
+            <div><label class="block text-sm font-medium text-stone-700 mb-1.5">Crop Name</label>{{ form.name }}</div>
+            <div><label class="block text-sm font-medium text-stone-700 mb-1.5">Category</label>{{ form.category }}</div>
+            <div><label class="block text-sm font-medium text-stone-700 mb-1.5">Description</label>{{ form.description }}</div>
+            <div><label class="block text-sm font-medium text-stone-700 mb-1.5">Planting Note</label>{{ form.planting_note }}</div>
+            <div><label class="block text-sm font-medium text-stone-700 mb-1.5">Avoid Note</label>{{ form.avoid_note }}</div>
+            <div class="flex items-center gap-3 text-sm text-stone-700">{{ form.is_active }} <span>Active Status</span></div>
+            <div class="pt-5 border-t border-stone-100 flex justify-end gap-3">
+                <a href="{% url 'dashboard_crops_list' %}" class="px-4 py-2 text-sm font-medium text-stone-600">Cancel</a>
+                <button type="submit" class="bg-stone-800 hover:bg-stone-900 text-white px-6 py-2 rounded-xl text-sm font-medium">Save Crop</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

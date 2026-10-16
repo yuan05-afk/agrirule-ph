@@ -1,0 +1,5494 @@
+[
+{
+  "model": "expert_system.crop",
+  "pk": 1,
+  "fields": {
+    "name": "Rice",
+    "category": "staples_root",
+    "description": "Major staple cereal crop requiring strong water support.",
+    "planting_note": "Best in puddled fields with reliable irrigation during wet periods.",
+    "avoid_note": "Avoid when water is low or irrigation is not available.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.406Z",
+    "updated_at": "2026-03-19T19:12:51.269Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 2,
+  "fields": {
+    "name": "Yellow Corn",
+    "category": "staples_root",
+    "description": "Versatile cereal crop adaptable to many field conditions.",
+    "planting_note": "Use good seed spacing and maintain moderate moisture during tasseling.",
+    "avoid_note": "Avoid prolonged flooding or very high standing water.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.409Z",
+    "updated_at": "2026-03-19T19:12:51.274Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 3,
+  "fields": {
+    "name": "Cassava",
+    "category": "staples_root",
+    "description": "Drought-tolerant root crop suitable for low-input systems.",
+    "planting_note": "Use healthy cuttings and weed early in the first month.",
+    "avoid_note": "Avoid waterlogged soils for long periods.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.413Z",
+    "updated_at": "2026-03-19T19:12:51.279Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 4,
+  "fields": {
+    "name": "Sweet Potato (Camote)",
+    "category": "staples_root",
+    "description": "Short-cycle root crop with strong tolerance to variable moisture.",
+    "planting_note": "Plant on raised beds and keep vines healthy during establishment.",
+    "avoid_note": "Avoid persistent flooding and compacted soils.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.416Z",
+    "updated_at": "2026-03-19T19:12:51.283Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 5,
+  "fields": {
+    "name": "Mungbean",
+    "category": "staples_root",
+    "description": "Legume crop suited to dry windows and low-input farms.",
+    "planting_note": "Use well-drained fields and avoid planting during heavy rainfall peaks.",
+    "avoid_note": "Avoid saturated fields and prolonged rainy spells.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.419Z",
+    "updated_at": "2026-03-19T19:12:51.287Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 6,
+  "fields": {
+    "name": "Peanut",
+    "category": "staples_root",
+    "description": "Nitrogen-fixing legume preferring lighter, well-drained soils.",
+    "planting_note": "Maintain loose topsoil for proper pod development.",
+    "avoid_note": "Avoid heavy clay with poor drainage.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.421Z",
+    "updated_at": "2026-03-19T19:12:51.290Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 7,
+  "fields": {
+    "name": "Soybean",
+    "category": "staples_root",
+    "description": "Protein-rich legume suitable for moderate moisture and neutral pH.",
+    "planting_note": "Best with neutral soil and moderate rainfall.",
+    "avoid_note": "Avoid strongly acidic and flooded conditions.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.423Z",
+    "updated_at": "2026-03-19T19:12:51.292Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 8,
+  "fields": {
+    "name": "Coconut",
+    "category": "industrial_perennial",
+    "description": "Perennial tree crop with broad adaptation in tropical systems.",
+    "planting_note": "Provide spacing and maintain weed-free circles at establishment.",
+    "avoid_note": "Avoid very dry sites without supplemental moisture.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.435Z",
+    "updated_at": "2026-03-19T19:12:51.294Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 9,
+  "fields": {
+    "name": "Coffee",
+    "category": "industrial_perennial",
+    "description": "High-value perennial requiring good moisture and drainage balance.",
+    "planting_note": "Use shade management and mulch in early growth phases.",
+    "avoid_note": "Avoid severely dry and highly alkaline conditions.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.437Z",
+    "updated_at": "2026-03-19T19:12:51.297Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 10,
+  "fields": {
+    "name": "Cacao",
+    "category": "industrial_perennial",
+    "description": "Perennial crop needing humid conditions and regular moisture.",
+    "planting_note": "Maintain shade and consistent soil moisture.",
+    "avoid_note": "Avoid prolonged dry stress.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.440Z",
+    "updated_at": "2026-03-19T19:12:51.299Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 11,
+  "fields": {
+    "name": "Abaca",
+    "category": "industrial_perennial",
+    "description": "Fiber crop thriving in humid tropical conditions.",
+    "planting_note": "Good moisture and partial shade improve stand vigor.",
+    "avoid_note": "Avoid dry areas without rainfall support.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.443Z",
+    "updated_at": "2026-03-19T19:12:51.301Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 12,
+  "fields": {
+    "name": "Rubber",
+    "category": "industrial_perennial",
+    "description": "Long-term plantation crop for suitable perennial systems.",
+    "planting_note": "Choose well-drained sites and maintain weed control in early years.",
+    "avoid_note": "Avoid shallow, dry, and drought-prone soils.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.445Z",
+    "updated_at": "2026-03-19T19:12:51.303Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 13,
+  "fields": {
+    "name": "Sugarcane",
+    "category": "industrial_perennial",
+    "description": "Commercial cane crop requiring open fields and medium to high resources.",
+    "planting_note": "Use clean seed cane and maintain fertility for ratoon success.",
+    "avoid_note": "Avoid very low water and nutrient-deprived sites.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.448Z",
+    "updated_at": "2026-03-19T19:12:51.305Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 14,
+  "fields": {
+    "name": "Banana",
+    "category": "fruit",
+    "description": "Tropical fruit crop suited to moderate to high moisture.",
+    "planting_note": "Maintain sucker selection and wind protection where possible.",
+    "avoid_note": "Avoid prolonged drought and poorly managed water stress.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.450Z",
+    "updated_at": "2026-03-19T19:12:51.307Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 15,
+  "fields": {
+    "name": "Mango",
+    "category": "fruit",
+    "description": "Fruit tree preferring good drainage and dry flowering periods.",
+    "planting_note": "Encourage canopy airflow and avoid stagnant water around roots.",
+    "avoid_note": "Avoid waterlogged clay lowlands.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.453Z",
+    "updated_at": "2026-03-19T19:12:51.309Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 16,
+  "fields": {
+    "name": "Pineapple",
+    "category": "fruit",
+    "description": "Fruit crop favoring well-drained soils and moderate moisture.",
+    "planting_note": "Maintain drainage and clean field sanitation.",
+    "avoid_note": "Avoid heavy flooding and poorly drained clay.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.456Z",
+    "updated_at": "2026-03-19T19:12:51.311Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 17,
+  "fields": {
+    "name": "Calamansi",
+    "category": "fruit",
+    "description": "Citrus crop with moderate adaptability to Philippine conditions.",
+    "planting_note": "Support with regular pruning and nutrient management.",
+    "avoid_note": "Avoid prolonged waterlogging and severe drought.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.458Z",
+    "updated_at": "2026-03-19T19:12:51.313Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 18,
+  "fields": {
+    "name": "Avocado",
+    "category": "fruit",
+    "description": "Perennial fruit tree suitable for well-drained and moderately moist sites.",
+    "planting_note": "Protect young trees from strong winds and standing water.",
+    "avoid_note": "Avoid lowland flooding conditions.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.461Z",
+    "updated_at": "2026-03-19T19:12:51.315Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 19,
+  "fields": {
+    "name": "Onion",
+    "category": "vegetable_spice",
+    "description": "High-value bulb crop favoring dry periods and good drainage.",
+    "planting_note": "Use raised beds and strict moisture control near harvest.",
+    "avoid_note": "Avoid heavy rainfall windows and high standing water.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.464Z",
+    "updated_at": "2026-03-19T19:12:51.317Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 20,
+  "fields": {
+    "name": "Garlic",
+    "category": "vegetable_spice",
+    "description": "Bulb spice crop suited to dry season and light soils.",
+    "planting_note": "Ensure proper spacing and avoid overwatering.",
+    "avoid_note": "Avoid high humidity and poorly drained fields.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.467Z",
+    "updated_at": "2026-03-19T19:12:51.321Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 21,
+  "fields": {
+    "name": "Tomato",
+    "category": "vegetable_spice",
+    "description": "Common vegetable crop requiring balanced moisture and loam soil.",
+    "planting_note": "Stake plants and monitor disease during humid weeks.",
+    "avoid_note": "Avoid constant heavy rains and waterlogging.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.470Z",
+    "updated_at": "2026-03-19T19:12:51.324Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 22,
+  "fields": {
+    "name": "Eggplant",
+    "category": "vegetable_spice",
+    "description": "Resilient vegetable with good productivity in warm conditions.",
+    "planting_note": "Use proper spacing and prune old leaves for airflow.",
+    "avoid_note": "Avoid prolonged flooding and saturated soils.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.473Z",
+    "updated_at": "2026-03-19T19:12:51.326Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 23,
+  "fields": {
+    "name": "Okra",
+    "category": "vegetable_spice",
+    "description": "Warm-season vegetable with moderate drought tolerance.",
+    "planting_note": "Harvest regularly to maintain pod quality.",
+    "avoid_note": "Avoid heavy flooding and prolonged cold-wet conditions.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.476Z",
+    "updated_at": "2026-03-19T19:12:51.329Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 24,
+  "fields": {
+    "name": "Ampalaya",
+    "category": "vegetable_spice",
+    "description": "Vining vegetable favoring warm weather and moderate watering.",
+    "planting_note": "Use trellis support and maintain regular but not excessive watering.",
+    "avoid_note": "Avoid persistent waterlogging and severe flooding.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.478Z",
+    "updated_at": "2026-03-19T19:12:51.331Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 25,
+  "fields": {
+    "name": "String Beans",
+    "category": "vegetable_spice",
+    "description": "Leguminous vegetable suited to moderate moisture and good drainage.",
+    "planting_note": "Provide staking for climbing types and monitor pod borers.",
+    "avoid_note": "Avoid overly wet soil conditions.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.480Z",
+    "updated_at": "2026-03-19T19:12:51.333Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 26,
+  "fields": {
+    "name": "Cabbage",
+    "category": "vegetable_spice",
+    "description": "Cooler-condition vegetable for managed or upland settings.",
+    "planting_note": "Perform best in cooler windows and controlled watering.",
+    "avoid_note": "Avoid hot-dry lowland stress periods.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.483Z",
+    "updated_at": "2026-03-19T19:12:51.336Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 27,
+  "fields": {
+    "name": "Squash",
+    "category": "vegetable_spice",
+    "description": "Adaptable vegetable crop with broad field suitability.",
+    "planting_note": "Use proper spacing and pollination-friendly field management.",
+    "avoid_note": "Avoid severe water stress during fruit set.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.485Z",
+    "updated_at": "2026-03-19T19:12:51.338Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 28,
+  "fields": {
+    "name": "Ginger",
+    "category": "vegetable_spice",
+    "description": "Spice crop favoring moist but well-drained conditions.",
+    "planting_note": "Use disease-free rhizomes and maintain mulch cover.",
+    "avoid_note": "Avoid long drought periods and compacted soils.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.488Z",
+    "updated_at": "2026-03-19T19:12:51.340Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 29,
+  "fields": {
+    "name": "Lettuce",
+    "category": "vegetable_spice",
+    "description": "Leafy vegetable requiring mild conditions and careful irrigation.",
+    "planting_note": "Prefer cooler planting windows and frequent light watering.",
+    "avoid_note": "Avoid extreme heat and prolonged dry stress.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.491Z",
+    "updated_at": "2026-03-19T19:12:51.343Z"
+  }
+},
+{
+  "model": "expert_system.crop",
+  "pk": 30,
+  "fields": {
+    "name": "Pechay",
+    "category": "vegetable_spice",
+    "description": "Short-cycle leafy vegetable for quick harvest cycles.",
+    "planting_note": "Keep soil moisture consistent and harvest at marketable size.",
+    "avoid_note": "Avoid severe drought and unmanaged heat stress.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.493Z",
+    "updated_at": "2026-03-19T19:12:51.345Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 1,
+  "fields": {
+    "name": "R1_rice_preferred_soil",
+    "crop": 1,
+    "season_condition": "",
+    "soil_type_condition": "clay",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Rice prefers clay soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.497Z",
+    "updated_at": "2026-03-19T19:12:51.350Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 2,
+  "fields": {
+    "name": "R2_rice_preferred_water",
+    "crop": 1,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Rice.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.499Z",
+    "updated_at": "2026-03-19T19:12:51.353Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 3,
+  "fields": {
+    "name": "R3_rice_season_preference",
+    "crop": 1,
+    "season_condition": "wet",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Rice.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.503Z",
+    "updated_at": "2026-03-19T19:12:51.356Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 4,
+  "fields": {
+    "name": "R4_rice_preference_support",
+    "crop": 1,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "staple",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Rice.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.506Z",
+    "updated_at": "2026-03-19T19:12:51.359Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 5,
+  "fields": {
+    "name": "R5_rice_water_penalty",
+    "crop": 1,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Rice.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:02:58.509Z",
+    "updated_at": "2026-03-19T19:12:51.361Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 7,
+  "fields": {
+    "name": "R1_yellow_corn_preferred_soil",
+    "crop": 2,
+    "season_condition": "",
+    "soil_type_condition": "silt",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Yellow Corn prefers silt soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:09.988Z",
+    "updated_at": "2026-03-19T19:12:51.368Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 8,
+  "fields": {
+    "name": "R2_yellow_corn_preferred_water",
+    "crop": 2,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Yellow Corn.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:09.991Z",
+    "updated_at": "2026-03-19T19:12:51.371Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 9,
+  "fields": {
+    "name": "R3_yellow_corn_season_preference",
+    "crop": 2,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Yellow Corn.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:09.993Z",
+    "updated_at": "2026-03-19T19:12:51.375Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 10,
+  "fields": {
+    "name": "R4_yellow_corn_preference_support",
+    "crop": 2,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "staple",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Yellow Corn.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:09.996Z",
+    "updated_at": "2026-03-19T19:12:51.378Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 11,
+  "fields": {
+    "name": "R5_yellow_corn_water_penalty",
+    "crop": 2,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Yellow Corn.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:09.998Z",
+    "updated_at": "2026-03-19T19:12:51.381Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 12,
+  "fields": {
+    "name": "R1_cassava_preferred_soil",
+    "crop": 3,
+    "season_condition": "",
+    "soil_type_condition": "sandy",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Cassava prefers sandy soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.001Z",
+    "updated_at": "2026-03-19T19:12:51.385Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 13,
+  "fields": {
+    "name": "R2_cassava_preferred_water",
+    "crop": 3,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Cassava.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.003Z",
+    "updated_at": "2026-03-19T19:12:51.388Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 14,
+  "fields": {
+    "name": "R3_cassava_season_preference",
+    "crop": 3,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Cassava.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.006Z",
+    "updated_at": "2026-03-19T19:12:51.391Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 15,
+  "fields": {
+    "name": "R4_cassava_preference_support",
+    "crop": 3,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "resilient",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Cassava.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.008Z",
+    "updated_at": "2026-03-19T19:12:51.393Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 16,
+  "fields": {
+    "name": "R5_cassava_water_penalty",
+    "crop": 3,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Cassava.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.011Z",
+    "updated_at": "2026-03-19T19:12:51.396Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 17,
+  "fields": {
+    "name": "R1_sweet_potato_camote_preferred_soil",
+    "crop": 4,
+    "season_condition": "",
+    "soil_type_condition": "sandy",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Sweet Potato (Camote) prefers sandy soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.014Z",
+    "updated_at": "2026-03-19T19:12:51.400Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 18,
+  "fields": {
+    "name": "R2_sweet_potato_camote_preferred_water",
+    "crop": 4,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Sweet Potato (Camote).",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.016Z",
+    "updated_at": "2026-03-19T19:12:51.402Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 19,
+  "fields": {
+    "name": "R3_sweet_potato_camote_season_preference",
+    "crop": 4,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Sweet Potato (Camote).",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.018Z",
+    "updated_at": "2026-03-19T19:12:51.405Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 20,
+  "fields": {
+    "name": "R4_sweet_potato_camote_preference_support",
+    "crop": 4,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "resilient",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Sweet Potato (Camote).",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.021Z",
+    "updated_at": "2026-03-19T19:12:51.407Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 21,
+  "fields": {
+    "name": "R5_sweet_potato_camote_water_penalty",
+    "crop": 4,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Sweet Potato (Camote).",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.023Z",
+    "updated_at": "2026-03-19T19:12:51.410Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 22,
+  "fields": {
+    "name": "R1_mungbean_preferred_soil",
+    "crop": 5,
+    "season_condition": "",
+    "soil_type_condition": "loam",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Mungbean prefers loam soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.026Z",
+    "updated_at": "2026-03-19T19:12:51.416Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 23,
+  "fields": {
+    "name": "R2_mungbean_preferred_water",
+    "crop": 5,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Mungbean.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.029Z",
+    "updated_at": "2026-03-19T19:12:51.418Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 24,
+  "fields": {
+    "name": "R3_mungbean_season_preference",
+    "crop": 5,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Mungbean.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.032Z",
+    "updated_at": "2026-03-19T19:12:51.420Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 25,
+  "fields": {
+    "name": "R4_mungbean_preference_support",
+    "crop": 5,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "resilient",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Mungbean.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.035Z",
+    "updated_at": "2026-03-19T19:12:51.423Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 26,
+  "fields": {
+    "name": "R5_mungbean_water_penalty",
+    "crop": 5,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Mungbean.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.038Z",
+    "updated_at": "2026-03-19T19:12:51.425Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 28,
+  "fields": {
+    "name": "R1_peanut_preferred_soil",
+    "crop": 6,
+    "season_condition": "",
+    "soil_type_condition": "sandy",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Peanut prefers sandy soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.044Z",
+    "updated_at": "2026-03-19T19:12:51.431Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 29,
+  "fields": {
+    "name": "R2_peanut_preferred_water",
+    "crop": 6,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Peanut.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.047Z",
+    "updated_at": "2026-03-19T19:12:51.434Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 30,
+  "fields": {
+    "name": "R3_peanut_season_preference",
+    "crop": 6,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Peanut.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.049Z",
+    "updated_at": "2026-03-19T19:12:51.436Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 31,
+  "fields": {
+    "name": "R4_peanut_preference_support",
+    "crop": 6,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "resilient",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Peanut.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.052Z",
+    "updated_at": "2026-03-19T19:12:51.439Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 32,
+  "fields": {
+    "name": "R5_peanut_water_penalty",
+    "crop": 6,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Peanut.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.055Z",
+    "updated_at": "2026-03-19T19:12:51.441Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 34,
+  "fields": {
+    "name": "R1_soybean_preferred_soil",
+    "crop": 7,
+    "season_condition": "",
+    "soil_type_condition": "loam",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Soybean prefers loam soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.060Z",
+    "updated_at": "2026-03-19T19:12:51.447Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 35,
+  "fields": {
+    "name": "R2_soybean_preferred_water",
+    "crop": 7,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Soybean.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.062Z",
+    "updated_at": "2026-03-19T19:12:51.449Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 36,
+  "fields": {
+    "name": "R3_soybean_season_preference",
+    "crop": 7,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Soybean.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.065Z",
+    "updated_at": "2026-03-19T19:12:51.451Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 37,
+  "fields": {
+    "name": "R4_soybean_preference_support",
+    "crop": 7,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "staple",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Soybean.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.067Z",
+    "updated_at": "2026-03-19T19:12:51.453Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 38,
+  "fields": {
+    "name": "R5_soybean_water_penalty",
+    "crop": 7,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Soybean.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.070Z",
+    "updated_at": "2026-03-19T19:12:51.455Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 40,
+  "fields": {
+    "name": "R1_coconut_preferred_soil",
+    "crop": 8,
+    "season_condition": "",
+    "soil_type_condition": "silt",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Coconut prefers silt soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.075Z",
+    "updated_at": "2026-03-19T19:12:51.459Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 41,
+  "fields": {
+    "name": "R2_coconut_preferred_water",
+    "crop": 8,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Coconut.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.078Z",
+    "updated_at": "2026-03-19T19:12:51.461Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 42,
+  "fields": {
+    "name": "R3_coconut_season_preference",
+    "crop": 8,
+    "season_condition": "wet",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Coconut.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.081Z",
+    "updated_at": "2026-03-19T19:12:51.463Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 43,
+  "fields": {
+    "name": "R4_coconut_preference_support",
+    "crop": 8,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "resilient",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Coconut.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.083Z",
+    "updated_at": "2026-03-19T19:12:51.465Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 44,
+  "fields": {
+    "name": "R5_coconut_water_penalty",
+    "crop": 8,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Coconut.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.086Z",
+    "updated_at": "2026-03-19T19:12:51.467Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 45,
+  "fields": {
+    "name": "R1_coffee_preferred_soil",
+    "crop": 9,
+    "season_condition": "",
+    "soil_type_condition": "loam",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Coffee prefers loam soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.089Z",
+    "updated_at": "2026-03-19T19:12:51.471Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 46,
+  "fields": {
+    "name": "R2_coffee_preferred_water",
+    "crop": 9,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Coffee.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.092Z",
+    "updated_at": "2026-03-19T19:12:51.473Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 47,
+  "fields": {
+    "name": "R3_coffee_season_preference",
+    "crop": 9,
+    "season_condition": "wet",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Coffee.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.095Z",
+    "updated_at": "2026-03-19T19:12:51.475Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 48,
+  "fields": {
+    "name": "R4_coffee_preference_support",
+    "crop": 9,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "resilient",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Coffee.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.098Z",
+    "updated_at": "2026-03-19T19:12:51.478Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 49,
+  "fields": {
+    "name": "R5_coffee_water_penalty",
+    "crop": 9,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Coffee.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.100Z",
+    "updated_at": "2026-03-19T19:12:51.480Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 50,
+  "fields": {
+    "name": "R1_cacao_preferred_soil",
+    "crop": 10,
+    "season_condition": "",
+    "soil_type_condition": "loam",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Cacao prefers loam soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.103Z",
+    "updated_at": "2026-03-19T19:12:51.485Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 51,
+  "fields": {
+    "name": "R2_cacao_preferred_water",
+    "crop": 10,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Cacao.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.106Z",
+    "updated_at": "2026-03-19T19:12:51.487Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 52,
+  "fields": {
+    "name": "R3_cacao_season_preference",
+    "crop": 10,
+    "season_condition": "wet",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Cacao.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.108Z",
+    "updated_at": "2026-03-19T19:12:51.489Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 53,
+  "fields": {
+    "name": "R4_cacao_preference_support",
+    "crop": 10,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "resilient",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Cacao.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.110Z",
+    "updated_at": "2026-03-19T19:12:51.491Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 54,
+  "fields": {
+    "name": "R5_cacao_water_penalty",
+    "crop": 10,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Cacao.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.114Z",
+    "updated_at": "2026-03-19T19:12:51.494Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 56,
+  "fields": {
+    "name": "R1_abaca_preferred_soil",
+    "crop": 11,
+    "season_condition": "",
+    "soil_type_condition": "loam",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Abaca prefers loam soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.120Z",
+    "updated_at": "2026-03-19T19:12:51.501Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 57,
+  "fields": {
+    "name": "R2_abaca_preferred_water",
+    "crop": 11,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Abaca.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.123Z",
+    "updated_at": "2026-03-19T19:12:51.504Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 58,
+  "fields": {
+    "name": "R3_abaca_season_preference",
+    "crop": 11,
+    "season_condition": "wet",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Abaca.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.125Z",
+    "updated_at": "2026-03-19T19:12:51.506Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 59,
+  "fields": {
+    "name": "R4_abaca_preference_support",
+    "crop": 11,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "resilient",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Abaca.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.127Z",
+    "updated_at": "2026-03-19T19:12:51.507Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 60,
+  "fields": {
+    "name": "R5_abaca_water_penalty",
+    "crop": 11,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Abaca.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.130Z",
+    "updated_at": "2026-03-19T19:12:51.510Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 62,
+  "fields": {
+    "name": "R1_rubber_preferred_soil",
+    "crop": 12,
+    "season_condition": "",
+    "soil_type_condition": "silt",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Rubber prefers silt soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.134Z",
+    "updated_at": "2026-03-19T19:12:51.515Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 63,
+  "fields": {
+    "name": "R2_rubber_preferred_water",
+    "crop": 12,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Rubber.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.137Z",
+    "updated_at": "2026-03-19T19:12:51.518Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 64,
+  "fields": {
+    "name": "R3_rubber_season_preference",
+    "crop": 12,
+    "season_condition": "wet",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Rubber.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.139Z",
+    "updated_at": "2026-03-19T19:12:51.520Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 65,
+  "fields": {
+    "name": "R4_rubber_preference_support",
+    "crop": 12,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "resilient",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Rubber.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.142Z",
+    "updated_at": "2026-03-19T19:12:51.522Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 66,
+  "fields": {
+    "name": "R5_rubber_water_penalty",
+    "crop": 12,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Rubber.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.144Z",
+    "updated_at": "2026-03-19T19:12:51.524Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 67,
+  "fields": {
+    "name": "R1_sugarcane_preferred_soil",
+    "crop": 13,
+    "season_condition": "",
+    "soil_type_condition": "silt",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Sugarcane prefers silt soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.147Z",
+    "updated_at": "2026-03-19T19:12:51.528Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 68,
+  "fields": {
+    "name": "R2_sugarcane_preferred_water",
+    "crop": 13,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Sugarcane.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.150Z",
+    "updated_at": "2026-03-19T19:12:51.530Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 69,
+  "fields": {
+    "name": "R3_sugarcane_season_preference",
+    "crop": 13,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Sugarcane.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.153Z",
+    "updated_at": "2026-03-19T19:12:51.532Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 70,
+  "fields": {
+    "name": "R4_sugarcane_preference_support",
+    "crop": 13,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "staple",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Sugarcane.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.156Z",
+    "updated_at": "2026-03-19T19:12:51.534Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 71,
+  "fields": {
+    "name": "R5_sugarcane_water_penalty",
+    "crop": 13,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Sugarcane.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.158Z",
+    "updated_at": "2026-03-19T19:12:51.536Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 72,
+  "fields": {
+    "name": "R1_banana_preferred_soil",
+    "crop": 14,
+    "season_condition": "",
+    "soil_type_condition": "loam",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Banana prefers loam soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.161Z",
+    "updated_at": "2026-03-19T19:12:51.541Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 73,
+  "fields": {
+    "name": "R2_banana_preferred_water",
+    "crop": 14,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Banana.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.164Z",
+    "updated_at": "2026-03-19T19:12:51.543Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 74,
+  "fields": {
+    "name": "R3_banana_season_preference",
+    "crop": 14,
+    "season_condition": "wet",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Banana.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.166Z",
+    "updated_at": "2026-03-19T19:12:51.545Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 75,
+  "fields": {
+    "name": "R4_banana_preference_support",
+    "crop": 14,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "resilient",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Banana.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.169Z",
+    "updated_at": "2026-03-19T19:12:51.547Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 76,
+  "fields": {
+    "name": "R5_banana_water_penalty",
+    "crop": 14,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Banana.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.171Z",
+    "updated_at": "2026-03-19T19:12:51.549Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 78,
+  "fields": {
+    "name": "R1_mango_preferred_soil",
+    "crop": 15,
+    "season_condition": "",
+    "soil_type_condition": "sandy",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Mango prefers sandy soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.175Z",
+    "updated_at": "2026-03-19T19:12:51.556Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 79,
+  "fields": {
+    "name": "R2_mango_preferred_water",
+    "crop": 15,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Mango.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.178Z",
+    "updated_at": "2026-03-19T19:12:51.559Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 80,
+  "fields": {
+    "name": "R3_mango_season_preference",
+    "crop": 15,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Mango.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.180Z",
+    "updated_at": "2026-03-19T19:12:51.561Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 81,
+  "fields": {
+    "name": "R4_mango_preference_support",
+    "crop": 15,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "resilient",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Mango.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.183Z",
+    "updated_at": "2026-03-19T19:12:51.564Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 82,
+  "fields": {
+    "name": "R5_mango_water_penalty",
+    "crop": 15,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Mango.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.185Z",
+    "updated_at": "2026-03-19T19:12:51.566Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 84,
+  "fields": {
+    "name": "R1_pineapple_preferred_soil",
+    "crop": 16,
+    "season_condition": "",
+    "soil_type_condition": "sandy",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Pineapple prefers sandy soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.191Z",
+    "updated_at": "2026-03-19T19:12:51.571Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 85,
+  "fields": {
+    "name": "R2_pineapple_preferred_water",
+    "crop": 16,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Pineapple.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.193Z",
+    "updated_at": "2026-03-19T19:12:51.574Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 86,
+  "fields": {
+    "name": "R3_pineapple_season_preference",
+    "crop": 16,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Pineapple.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.196Z",
+    "updated_at": "2026-03-19T19:12:51.576Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 87,
+  "fields": {
+    "name": "R4_pineapple_preference_support",
+    "crop": 16,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "resilient",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Pineapple.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.198Z",
+    "updated_at": "2026-03-19T19:12:51.578Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 88,
+  "fields": {
+    "name": "R5_pineapple_water_penalty",
+    "crop": 16,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Pineapple.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.200Z",
+    "updated_at": "2026-03-19T19:12:51.580Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 90,
+  "fields": {
+    "name": "R1_calamansi_preferred_soil",
+    "crop": 17,
+    "season_condition": "",
+    "soil_type_condition": "loam",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Calamansi prefers loam soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.205Z",
+    "updated_at": "2026-03-19T19:12:51.583Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 91,
+  "fields": {
+    "name": "R2_calamansi_preferred_water",
+    "crop": 17,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Calamansi.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.207Z",
+    "updated_at": "2026-03-19T19:12:51.585Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 92,
+  "fields": {
+    "name": "R3_calamansi_season_preference",
+    "crop": 17,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Calamansi.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.210Z",
+    "updated_at": "2026-03-19T19:12:51.587Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 93,
+  "fields": {
+    "name": "R4_calamansi_preference_support",
+    "crop": 17,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "resilient",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Calamansi.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.212Z",
+    "updated_at": "2026-03-19T19:12:51.590Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 94,
+  "fields": {
+    "name": "R5_calamansi_water_penalty",
+    "crop": 17,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Calamansi.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.214Z",
+    "updated_at": "2026-03-19T19:12:51.592Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 95,
+  "fields": {
+    "name": "R1_avocado_preferred_soil",
+    "crop": 18,
+    "season_condition": "",
+    "soil_type_condition": "loam",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Avocado prefers loam soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.216Z",
+    "updated_at": "2026-03-19T19:12:51.596Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 96,
+  "fields": {
+    "name": "R2_avocado_preferred_water",
+    "crop": 18,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Avocado.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.219Z",
+    "updated_at": "2026-03-19T19:12:51.598Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 97,
+  "fields": {
+    "name": "R3_avocado_season_preference",
+    "crop": 18,
+    "season_condition": "wet",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Avocado.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.222Z",
+    "updated_at": "2026-03-19T19:12:51.600Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 98,
+  "fields": {
+    "name": "R4_avocado_preference_support",
+    "crop": 18,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "resilient",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Avocado.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.224Z",
+    "updated_at": "2026-03-19T19:12:51.602Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 99,
+  "fields": {
+    "name": "R5_avocado_water_penalty",
+    "crop": 18,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Avocado.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.226Z",
+    "updated_at": "2026-03-19T19:12:51.605Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 100,
+  "fields": {
+    "name": "R1_onion_preferred_soil",
+    "crop": 19,
+    "season_condition": "",
+    "soil_type_condition": "sandy",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Onion prefers sandy soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.228Z",
+    "updated_at": "2026-03-19T19:12:51.611Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 101,
+  "fields": {
+    "name": "R2_onion_preferred_water",
+    "crop": 19,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Onion.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.231Z",
+    "updated_at": "2026-03-19T19:12:51.613Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 102,
+  "fields": {
+    "name": "R3_onion_season_preference",
+    "crop": 19,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Onion.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.234Z",
+    "updated_at": "2026-03-19T19:12:51.616Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 103,
+  "fields": {
+    "name": "R4_onion_preference_support",
+    "crop": 19,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "vegetable",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Onion.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.236Z",
+    "updated_at": "2026-03-19T19:12:51.618Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 104,
+  "fields": {
+    "name": "R5_onion_water_penalty",
+    "crop": 19,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Onion.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.239Z",
+    "updated_at": "2026-03-19T19:12:51.620Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 106,
+  "fields": {
+    "name": "R1_garlic_preferred_soil",
+    "crop": 20,
+    "season_condition": "",
+    "soil_type_condition": "sandy",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Garlic prefers sandy soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.243Z",
+    "updated_at": "2026-03-19T19:12:51.628Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 107,
+  "fields": {
+    "name": "R2_garlic_preferred_water",
+    "crop": 20,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Garlic.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.246Z",
+    "updated_at": "2026-03-19T19:12:51.630Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 108,
+  "fields": {
+    "name": "R3_garlic_season_preference",
+    "crop": 20,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Garlic.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.248Z",
+    "updated_at": "2026-03-19T19:12:51.632Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 109,
+  "fields": {
+    "name": "R4_garlic_preference_support",
+    "crop": 20,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "vegetable",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Garlic.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.250Z",
+    "updated_at": "2026-03-19T19:12:51.634Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 110,
+  "fields": {
+    "name": "R5_garlic_water_penalty",
+    "crop": 20,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Garlic.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.252Z",
+    "updated_at": "2026-03-19T19:12:51.637Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 112,
+  "fields": {
+    "name": "R1_tomato_preferred_soil",
+    "crop": 21,
+    "season_condition": "",
+    "soil_type_condition": "loam",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Tomato prefers loam soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.257Z",
+    "updated_at": "2026-03-19T19:12:51.644Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 113,
+  "fields": {
+    "name": "R2_tomato_preferred_water",
+    "crop": 21,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Tomato.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.259Z",
+    "updated_at": "2026-03-19T19:12:51.646Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 114,
+  "fields": {
+    "name": "R3_tomato_season_preference",
+    "crop": 21,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Tomato.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.262Z",
+    "updated_at": "2026-03-19T19:12:51.648Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 115,
+  "fields": {
+    "name": "R4_tomato_preference_support",
+    "crop": 21,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "vegetable",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Tomato.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.264Z",
+    "updated_at": "2026-03-19T19:12:51.650Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 116,
+  "fields": {
+    "name": "R5_tomato_water_penalty",
+    "crop": 21,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Tomato.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.266Z",
+    "updated_at": "2026-03-19T19:12:51.652Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 118,
+  "fields": {
+    "name": "R1_eggplant_preferred_soil",
+    "crop": 22,
+    "season_condition": "",
+    "soil_type_condition": "loam",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Eggplant prefers loam soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.271Z",
+    "updated_at": "2026-03-19T19:12:51.657Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 119,
+  "fields": {
+    "name": "R2_eggplant_preferred_water",
+    "crop": 22,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Eggplant.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.274Z",
+    "updated_at": "2026-03-19T19:12:51.659Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 120,
+  "fields": {
+    "name": "R3_eggplant_season_preference",
+    "crop": 22,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Eggplant.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.276Z",
+    "updated_at": "2026-03-19T19:12:51.661Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 121,
+  "fields": {
+    "name": "R4_eggplant_preference_support",
+    "crop": 22,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "vegetable",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Eggplant.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.279Z",
+    "updated_at": "2026-03-19T19:12:51.663Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 122,
+  "fields": {
+    "name": "R5_eggplant_water_penalty",
+    "crop": 22,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Eggplant.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.281Z",
+    "updated_at": "2026-03-19T19:12:51.665Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 124,
+  "fields": {
+    "name": "R1_okra_preferred_soil",
+    "crop": 23,
+    "season_condition": "",
+    "soil_type_condition": "sandy",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Okra prefers sandy soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.286Z",
+    "updated_at": "2026-03-19T19:12:51.669Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 125,
+  "fields": {
+    "name": "R2_okra_preferred_water",
+    "crop": 23,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Okra.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.288Z",
+    "updated_at": "2026-03-19T19:12:51.671Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 126,
+  "fields": {
+    "name": "R3_okra_season_preference",
+    "crop": 23,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Okra.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.291Z",
+    "updated_at": "2026-03-19T19:12:51.673Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 127,
+  "fields": {
+    "name": "R4_okra_preference_support",
+    "crop": 23,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "vegetable",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Okra.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.293Z",
+    "updated_at": "2026-03-19T19:12:51.675Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 128,
+  "fields": {
+    "name": "R5_okra_water_penalty",
+    "crop": 23,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Okra.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.296Z",
+    "updated_at": "2026-03-19T19:12:51.677Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 129,
+  "fields": {
+    "name": "R1_ampalaya_preferred_soil",
+    "crop": 24,
+    "season_condition": "",
+    "soil_type_condition": "loam",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Ampalaya prefers loam soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.298Z",
+    "updated_at": "2026-03-19T19:12:51.681Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 130,
+  "fields": {
+    "name": "R2_ampalaya_preferred_water",
+    "crop": 24,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Ampalaya.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.300Z",
+    "updated_at": "2026-03-19T19:12:51.683Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 131,
+  "fields": {
+    "name": "R3_ampalaya_season_preference",
+    "crop": 24,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Ampalaya.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.304Z",
+    "updated_at": "2026-03-19T19:12:51.685Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 132,
+  "fields": {
+    "name": "R4_ampalaya_preference_support",
+    "crop": 24,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "vegetable",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Ampalaya.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.306Z",
+    "updated_at": "2026-03-19T19:12:51.687Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 133,
+  "fields": {
+    "name": "R5_ampalaya_water_penalty",
+    "crop": 24,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Ampalaya.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.309Z",
+    "updated_at": "2026-03-19T19:12:51.690Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 134,
+  "fields": {
+    "name": "R1_string_beans_preferred_soil",
+    "crop": 25,
+    "season_condition": "",
+    "soil_type_condition": "loam",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: String Beans prefers loam soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.311Z",
+    "updated_at": "2026-03-19T19:12:51.693Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 135,
+  "fields": {
+    "name": "R2_string_beans_preferred_water",
+    "crop": 25,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits String Beans.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.313Z",
+    "updated_at": "2026-03-19T19:12:51.695Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 136,
+  "fields": {
+    "name": "R3_string_beans_season_preference",
+    "crop": 25,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports String Beans.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.316Z",
+    "updated_at": "2026-03-19T19:12:51.697Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 137,
+  "fields": {
+    "name": "R4_string_beans_preference_support",
+    "crop": 25,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "vegetable",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with String Beans.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.318Z",
+    "updated_at": "2026-03-19T19:12:51.699Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 138,
+  "fields": {
+    "name": "R5_string_beans_water_penalty",
+    "crop": 25,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for String Beans.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.320Z",
+    "updated_at": "2026-03-19T19:12:51.701Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 139,
+  "fields": {
+    "name": "R1_cabbage_preferred_soil",
+    "crop": 26,
+    "season_condition": "",
+    "soil_type_condition": "loam",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Cabbage prefers loam soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.323Z",
+    "updated_at": "2026-03-19T19:12:51.706Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 140,
+  "fields": {
+    "name": "R2_cabbage_preferred_water",
+    "crop": 26,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Cabbage.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.326Z",
+    "updated_at": "2026-03-19T19:12:51.708Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 141,
+  "fields": {
+    "name": "R3_cabbage_season_preference",
+    "crop": 26,
+    "season_condition": "wet",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Cabbage.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.328Z",
+    "updated_at": "2026-03-19T19:12:51.710Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 142,
+  "fields": {
+    "name": "R4_cabbage_preference_support",
+    "crop": 26,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "vegetable",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Cabbage.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.331Z",
+    "updated_at": "2026-03-19T19:12:51.712Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 143,
+  "fields": {
+    "name": "R5_cabbage_water_penalty",
+    "crop": 26,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Cabbage.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.333Z",
+    "updated_at": "2026-03-19T19:12:51.714Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 145,
+  "fields": {
+    "name": "R1_squash_preferred_soil",
+    "crop": 27,
+    "season_condition": "",
+    "soil_type_condition": "silt",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Squash prefers silt soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.339Z",
+    "updated_at": "2026-03-19T19:12:51.720Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 146,
+  "fields": {
+    "name": "R2_squash_preferred_water",
+    "crop": 27,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Squash.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.341Z",
+    "updated_at": "2026-03-19T19:12:51.722Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 147,
+  "fields": {
+    "name": "R3_squash_season_preference",
+    "crop": 27,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Squash.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.344Z",
+    "updated_at": "2026-03-19T19:12:51.724Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 148,
+  "fields": {
+    "name": "R4_squash_preference_support",
+    "crop": 27,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "vegetable",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Squash.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.347Z",
+    "updated_at": "2026-03-19T19:12:51.726Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 149,
+  "fields": {
+    "name": "R5_squash_water_penalty",
+    "crop": 27,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Squash.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.349Z",
+    "updated_at": "2026-03-19T19:12:51.729Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 150,
+  "fields": {
+    "name": "R1_ginger_preferred_soil",
+    "crop": 28,
+    "season_condition": "",
+    "soil_type_condition": "loam",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Ginger prefers loam soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.352Z",
+    "updated_at": "2026-03-19T19:12:51.732Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 151,
+  "fields": {
+    "name": "R2_ginger_preferred_water",
+    "crop": 28,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Ginger.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.354Z",
+    "updated_at": "2026-03-19T19:12:51.734Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 152,
+  "fields": {
+    "name": "R3_ginger_season_preference",
+    "crop": 28,
+    "season_condition": "wet",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Ginger.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.357Z",
+    "updated_at": "2026-03-19T19:12:51.736Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 153,
+  "fields": {
+    "name": "R4_ginger_preference_support",
+    "crop": 28,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "vegetable",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Ginger.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.360Z",
+    "updated_at": "2026-03-19T19:12:51.738Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 154,
+  "fields": {
+    "name": "R5_ginger_water_penalty",
+    "crop": 28,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Ginger.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.363Z",
+    "updated_at": "2026-03-19T19:12:51.740Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 155,
+  "fields": {
+    "name": "R1_lettuce_preferred_soil",
+    "crop": 29,
+    "season_condition": "",
+    "soil_type_condition": "loam",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Lettuce prefers loam soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.365Z",
+    "updated_at": "2026-03-19T19:12:51.745Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 156,
+  "fields": {
+    "name": "R2_lettuce_preferred_water",
+    "crop": 29,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Lettuce.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.368Z",
+    "updated_at": "2026-03-19T19:12:51.747Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 157,
+  "fields": {
+    "name": "R3_lettuce_season_preference",
+    "crop": 29,
+    "season_condition": "wet",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Lettuce.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.371Z",
+    "updated_at": "2026-03-19T19:12:51.749Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 158,
+  "fields": {
+    "name": "R4_lettuce_preference_support",
+    "crop": 29,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "vegetable",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Lettuce.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.373Z",
+    "updated_at": "2026-03-19T19:12:51.751Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 159,
+  "fields": {
+    "name": "R5_lettuce_water_penalty",
+    "crop": 29,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Lettuce.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.376Z",
+    "updated_at": "2026-03-19T19:12:51.753Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 161,
+  "fields": {
+    "name": "R1_pechay_preferred_soil",
+    "crop": 30,
+    "season_condition": "",
+    "soil_type_condition": "loam",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Pechay prefers loam soil.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.380Z",
+    "updated_at": "2026-03-19T19:12:51.759Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 162,
+  "fields": {
+    "name": "R2_pechay_preferred_water",
+    "crop": 30,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "moderate",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 15,
+    "rule_type": "positive",
+    "explanation": "+15 points: Water level suits Pechay.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.385Z",
+    "updated_at": "2026-03-19T19:12:51.761Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 163,
+  "fields": {
+    "name": "R3_pechay_season_preference",
+    "crop": 30,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 10,
+    "rule_type": "positive",
+    "explanation": "+10 points: Current season supports Pechay.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.388Z",
+    "updated_at": "2026-03-19T19:12:51.763Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 164,
+  "fields": {
+    "name": "R4_pechay_preference_support",
+    "crop": 30,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "vegetable",
+    "score": 8,
+    "rule_type": "positive",
+    "explanation": "+8 points: Crop preference aligns with Pechay.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.391Z",
+    "updated_at": "2026-03-19T19:12:51.765Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 165,
+  "fields": {
+    "name": "R5_pechay_water_penalty",
+    "crop": 30,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 12,
+    "rule_type": "negative",
+    "explanation": "-12 points: Water condition is poor for Pechay.",
+    "is_active": true,
+    "created_at": "2026-03-19T18:03:10.394Z",
+    "updated_at": "2026-03-19T19:12:51.767Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 166,
+  "fields": {
+    "name": "R6_rice_critical_avoid_water",
+    "crop": 1,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 50,
+    "rule_type": "avoid",
+    "explanation": "Avoid: Rice is strongly unsuitable when water availability is Low.",
+    "is_active": true,
+    "created_at": "2026-03-19T19:12:51.364Z",
+    "updated_at": "2026-03-19T19:12:51.364Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 167,
+  "fields": {
+    "name": "R6_cacao_critical_avoid_water",
+    "crop": 10,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 50,
+    "rule_type": "avoid",
+    "explanation": "Avoid: Cacao is strongly unsuitable when water availability is Low.",
+    "is_active": true,
+    "created_at": "2026-03-19T19:12:51.496Z",
+    "updated_at": "2026-03-19T19:12:51.496Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 168,
+  "fields": {
+    "name": "R6_abaca_critical_avoid_water",
+    "crop": 11,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 50,
+    "rule_type": "avoid",
+    "explanation": "Avoid: Abaca is strongly unsuitable when water availability is Low.",
+    "is_active": true,
+    "created_at": "2026-03-19T19:12:51.512Z",
+    "updated_at": "2026-03-19T19:12:51.512Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 169,
+  "fields": {
+    "name": "R6_banana_critical_avoid_water",
+    "crop": 14,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "low",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 50,
+    "rule_type": "avoid",
+    "explanation": "Avoid: Banana is strongly unsuitable when water availability is Low.",
+    "is_active": true,
+    "created_at": "2026-03-19T19:12:51.551Z",
+    "updated_at": "2026-03-19T19:12:51.551Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 170,
+  "fields": {
+    "name": "R7_onion_critical_avoid_water",
+    "crop": 19,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 50,
+    "rule_type": "avoid",
+    "explanation": "Avoid: Onion is strongly unsuitable when water availability is High.",
+    "is_active": true,
+    "created_at": "2026-03-19T19:12:51.623Z",
+    "updated_at": "2026-03-19T19:12:51.623Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 171,
+  "fields": {
+    "name": "R7_garlic_critical_avoid_water",
+    "crop": 20,
+    "season_condition": "",
+    "soil_type_condition": "",
+    "water_availability_condition": "high",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 50,
+    "rule_type": "avoid",
+    "explanation": "Avoid: Garlic is strongly unsuitable when water availability is High.",
+    "is_active": true,
+    "created_at": "2026-03-19T19:12:51.639Z",
+    "updated_at": "2026-03-19T19:12:51.639Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 172,
+  "fields": {
+    "name": "R8_cabbage_critical_avoid_season",
+    "crop": 26,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 50,
+    "rule_type": "avoid",
+    "explanation": "Avoid: Cabbage is strongly unsuitable during Dry season conditions.",
+    "is_active": true,
+    "created_at": "2026-03-19T19:12:51.717Z",
+    "updated_at": "2026-03-19T19:12:51.717Z"
+  }
+},
+{
+  "model": "expert_system.rule",
+  "pk": 173,
+  "fields": {
+    "name": "R8_lettuce_critical_avoid_season",
+    "crop": 29,
+    "season_condition": "dry",
+    "soil_type_condition": "",
+    "water_availability_condition": "",
+    "farm_type_condition": "",
+    "soil_ph_condition": "",
+    "budget_level_condition": "",
+    "crop_preference_condition": "",
+    "score": 50,
+    "rule_type": "avoid",
+    "explanation": "Avoid: Lettuce is strongly unsuitable during Dry season conditions.",
+    "is_active": true,
+    "created_at": "2026-03-19T19:12:51.755Z",
+    "updated_at": "2026-03-19T19:12:51.755Z"
+  }
+},
+{
+  "model": "expert_system.consultation",
+  "pk": 1,
+  "fields": {
+    "season": "dry",
+    "soil_type": "loam",
+    "water_availability": "moderate",
+    "farm_type": "rainfed",
+    "soil_ph_category": "neutral",
+    "budget_level": "medium",
+    "crop_preference": "vegetable",
+    "created_at": "2026-03-19T18:26:51.691Z"
+  }
+},
+{
+  "model": "expert_system.consultation",
+  "pk": 2,
+  "fields": {
+    "season": "wet",
+    "soil_type": "clay",
+    "water_availability": "low",
+    "farm_type": "irrigated",
+    "soil_ph_category": "acidic",
+    "budget_level": "low",
+    "crop_preference": "staple",
+    "created_at": "2026-03-19T18:43:52.305Z"
+  }
+},
+{
+  "model": "expert_system.consultation",
+  "pk": 3,
+  "fields": {
+    "season": "wet",
+    "soil_type": "sandy",
+    "water_availability": "moderate",
+    "farm_type": "rainfed",
+    "soil_ph_category": "alkaline",
+    "budget_level": "medium",
+    "crop_preference": "vegetable",
+    "created_at": "2026-03-19T19:13:01.279Z"
+  }
+},
+{
+  "model": "expert_system.consultation",
+  "pk": 4,
+  "fields": {
+    "season": "dry",
+    "soil_type": "clay",
+    "water_availability": "low",
+    "farm_type": "rainfed",
+    "soil_ph_category": "neutral",
+    "budget_level": "low",
+    "crop_preference": "staple",
+    "created_at": "2026-03-19T19:13:12.491Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 1,
+  "fields": {
+    "consultation": 1,
+    "crop": 11,
+    "score": 15,
+    "explanation_text": "+15 points: Abaca prefers loam soil.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.708Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 2,
+  "fields": {
+    "consultation": 1,
+    "crop": 24,
+    "score": 48,
+    "explanation_text": "+15 points: Ampalaya prefers loam soil.\n+15 points: Water level suits Ampalaya.\n+10 points: Current season supports Ampalaya.\n+8 points: Crop preference aligns with Ampalaya.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.713Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 3,
+  "fields": {
+    "consultation": 1,
+    "crop": 18,
+    "score": 30,
+    "explanation_text": "+15 points: Avocado prefers loam soil.\n+15 points: Water level suits Avocado.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.718Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 4,
+  "fields": {
+    "consultation": 1,
+    "crop": 14,
+    "score": 15,
+    "explanation_text": "+15 points: Banana prefers loam soil.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.723Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 5,
+  "fields": {
+    "consultation": 1,
+    "crop": 26,
+    "score": 38,
+    "explanation_text": "+15 points: Cabbage prefers loam soil.\n+15 points: Water level suits Cabbage.\n+8 points: Crop preference aligns with Cabbage.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.727Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 6,
+  "fields": {
+    "consultation": 1,
+    "crop": 10,
+    "score": 15,
+    "explanation_text": "+15 points: Cacao prefers loam soil.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.731Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 7,
+  "fields": {
+    "consultation": 1,
+    "crop": 17,
+    "score": 40,
+    "explanation_text": "+15 points: Calamansi prefers loam soil.\n+15 points: Water level suits Calamansi.\n+10 points: Current season supports Calamansi.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.738Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 8,
+  "fields": {
+    "consultation": 1,
+    "crop": 3,
+    "score": 10,
+    "explanation_text": "+10 points: Current season supports Cassava.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.742Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 9,
+  "fields": {
+    "consultation": 1,
+    "crop": 8,
+    "score": 15,
+    "explanation_text": "+15 points: Water level suits Coconut.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.748Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 10,
+  "fields": {
+    "consultation": 1,
+    "crop": 9,
+    "score": 30,
+    "explanation_text": "+15 points: Coffee prefers loam soil.\n+15 points: Water level suits Coffee.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.753Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 11,
+  "fields": {
+    "consultation": 1,
+    "crop": 22,
+    "score": 48,
+    "explanation_text": "+15 points: Eggplant prefers loam soil.\n+15 points: Water level suits Eggplant.\n+10 points: Current season supports Eggplant.\n+8 points: Crop preference aligns with Eggplant.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.758Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 12,
+  "fields": {
+    "consultation": 1,
+    "crop": 20,
+    "score": 18,
+    "explanation_text": "+10 points: Current season supports Garlic.\n+8 points: Crop preference aligns with Garlic.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.762Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 13,
+  "fields": {
+    "consultation": 1,
+    "crop": 28,
+    "score": 38,
+    "explanation_text": "+15 points: Ginger prefers loam soil.\n+15 points: Water level suits Ginger.\n+8 points: Crop preference aligns with Ginger.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.768Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 14,
+  "fields": {
+    "consultation": 1,
+    "crop": 29,
+    "score": 38,
+    "explanation_text": "+15 points: Lettuce prefers loam soil.\n+15 points: Water level suits Lettuce.\n+8 points: Crop preference aligns with Lettuce.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.774Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 15,
+  "fields": {
+    "consultation": 1,
+    "crop": 15,
+    "score": 25,
+    "explanation_text": "+15 points: Water level suits Mango.\n+10 points: Current season supports Mango.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.778Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 16,
+  "fields": {
+    "consultation": 1,
+    "crop": 5,
+    "score": 25,
+    "explanation_text": "+15 points: Mungbean prefers loam soil.\n+10 points: Current season supports Mungbean.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.782Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 17,
+  "fields": {
+    "consultation": 1,
+    "crop": 23,
+    "score": 33,
+    "explanation_text": "+15 points: Water level suits Okra.\n+10 points: Current season supports Okra.\n+8 points: Crop preference aligns with Okra.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.786Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 18,
+  "fields": {
+    "consultation": 1,
+    "crop": 19,
+    "score": 18,
+    "explanation_text": "+10 points: Current season supports Onion.\n+8 points: Crop preference aligns with Onion.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.796Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 19,
+  "fields": {
+    "consultation": 1,
+    "crop": 6,
+    "score": 25,
+    "explanation_text": "+15 points: Water level suits Peanut.\n+10 points: Current season supports Peanut.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.801Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 20,
+  "fields": {
+    "consultation": 1,
+    "crop": 30,
+    "score": 48,
+    "explanation_text": "+15 points: Pechay prefers loam soil.\n+15 points: Water level suits Pechay.\n+10 points: Current season supports Pechay.\n+8 points: Crop preference aligns with Pechay.",
+    "is_recommended": true,
+    "is_avoid": false,
+    "rank_order": 3,
+    "created_at": "2026-03-19T18:26:51.808Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 21,
+  "fields": {
+    "consultation": 1,
+    "crop": 16,
+    "score": 25,
+    "explanation_text": "+15 points: Water level suits Pineapple.\n+10 points: Current season supports Pineapple.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.812Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 22,
+  "fields": {
+    "consultation": 1,
+    "crop": 1,
+    "score": 0,
+    "explanation_text": "",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.815Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 23,
+  "fields": {
+    "consultation": 1,
+    "crop": 12,
+    "score": 15,
+    "explanation_text": "+15 points: Water level suits Rubber.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.819Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 24,
+  "fields": {
+    "consultation": 1,
+    "crop": 7,
+    "score": 40,
+    "explanation_text": "+15 points: Soybean prefers loam soil.\n+15 points: Water level suits Soybean.\n+10 points: Current season supports Soybean.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.828Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 25,
+  "fields": {
+    "consultation": 1,
+    "crop": 27,
+    "score": 33,
+    "explanation_text": "+15 points: Water level suits Squash.\n+10 points: Current season supports Squash.\n+8 points: Crop preference aligns with Squash.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.833Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 26,
+  "fields": {
+    "consultation": 1,
+    "crop": 25,
+    "score": 48,
+    "explanation_text": "+15 points: String Beans prefers loam soil.\n+15 points: Water level suits String Beans.\n+10 points: Current season supports String Beans.\n+8 points: Crop preference aligns with String Beans.",
+    "is_recommended": true,
+    "is_avoid": false,
+    "rank_order": 2,
+    "created_at": "2026-03-19T18:26:51.839Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 27,
+  "fields": {
+    "consultation": 1,
+    "crop": 13,
+    "score": 25,
+    "explanation_text": "+15 points: Water level suits Sugarcane.\n+10 points: Current season supports Sugarcane.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.844Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 28,
+  "fields": {
+    "consultation": 1,
+    "crop": 4,
+    "score": 10,
+    "explanation_text": "+10 points: Current season supports Sweet Potato (Camote).",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.852Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 29,
+  "fields": {
+    "consultation": 1,
+    "crop": 21,
+    "score": 48,
+    "explanation_text": "+15 points: Tomato prefers loam soil.\n+15 points: Water level suits Tomato.\n+10 points: Current season supports Tomato.\n+8 points: Crop preference aligns with Tomato.",
+    "is_recommended": true,
+    "is_avoid": false,
+    "rank_order": 1,
+    "created_at": "2026-03-19T18:26:51.858Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 30,
+  "fields": {
+    "consultation": 1,
+    "crop": 2,
+    "score": 25,
+    "explanation_text": "+15 points: Water level suits Yellow Corn.\n+10 points: Current season supports Yellow Corn.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:26:51.861Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 31,
+  "fields": {
+    "consultation": 2,
+    "crop": 11,
+    "score": -2,
+    "explanation_text": "+10 points: Current season supports Abaca.\n-12 points: Water condition is poor for Abaca.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.333Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 32,
+  "fields": {
+    "consultation": 2,
+    "crop": 24,
+    "score": 0,
+    "explanation_text": "",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.339Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 33,
+  "fields": {
+    "consultation": 2,
+    "crop": 18,
+    "score": 10,
+    "explanation_text": "+10 points: Current season supports Avocado.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.344Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 34,
+  "fields": {
+    "consultation": 2,
+    "crop": 14,
+    "score": -2,
+    "explanation_text": "+10 points: Current season supports Banana.\n-12 points: Water condition is poor for Banana.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.347Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 35,
+  "fields": {
+    "consultation": 2,
+    "crop": 26,
+    "score": -2,
+    "explanation_text": "+10 points: Current season supports Cabbage.\n-12 points: Water condition is poor for Cabbage.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.350Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 36,
+  "fields": {
+    "consultation": 2,
+    "crop": 10,
+    "score": -2,
+    "explanation_text": "+10 points: Current season supports Cacao.\n-12 points: Water condition is poor for Cacao.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.354Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 37,
+  "fields": {
+    "consultation": 2,
+    "crop": 17,
+    "score": 0,
+    "explanation_text": "",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.358Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 38,
+  "fields": {
+    "consultation": 2,
+    "crop": 3,
+    "score": 15,
+    "explanation_text": "+15 points: Water level suits Cassava.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.362Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 39,
+  "fields": {
+    "consultation": 2,
+    "crop": 8,
+    "score": -2,
+    "explanation_text": "+10 points: Current season supports Coconut.\n-12 points: Water condition is poor for Coconut.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.366Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 40,
+  "fields": {
+    "consultation": 2,
+    "crop": 9,
+    "score": -2,
+    "explanation_text": "+10 points: Current season supports Coffee.\n-12 points: Water condition is poor for Coffee.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.370Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 41,
+  "fields": {
+    "consultation": 2,
+    "crop": 22,
+    "score": 0,
+    "explanation_text": "",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.373Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 42,
+  "fields": {
+    "consultation": 2,
+    "crop": 20,
+    "score": 15,
+    "explanation_text": "+15 points: Water level suits Garlic.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.378Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 43,
+  "fields": {
+    "consultation": 2,
+    "crop": 28,
+    "score": -2,
+    "explanation_text": "+10 points: Current season supports Ginger.\n-12 points: Water condition is poor for Ginger.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.382Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 44,
+  "fields": {
+    "consultation": 2,
+    "crop": 29,
+    "score": -2,
+    "explanation_text": "+10 points: Current season supports Lettuce.\n-12 points: Water condition is poor for Lettuce.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.386Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 45,
+  "fields": {
+    "consultation": 2,
+    "crop": 15,
+    "score": 0,
+    "explanation_text": "",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.390Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 46,
+  "fields": {
+    "consultation": 2,
+    "crop": 5,
+    "score": 15,
+    "explanation_text": "+15 points: Water level suits Mungbean.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.394Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 47,
+  "fields": {
+    "consultation": 2,
+    "crop": 23,
+    "score": 0,
+    "explanation_text": "",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.398Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 48,
+  "fields": {
+    "consultation": 2,
+    "crop": 19,
+    "score": 15,
+    "explanation_text": "+15 points: Water level suits Onion.",
+    "is_recommended": true,
+    "is_avoid": false,
+    "rank_order": 3,
+    "created_at": "2026-03-19T18:43:52.401Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 49,
+  "fields": {
+    "consultation": 2,
+    "crop": 6,
+    "score": 0,
+    "explanation_text": "",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.405Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 50,
+  "fields": {
+    "consultation": 2,
+    "crop": 30,
+    "score": -12,
+    "explanation_text": "-12 points: Water condition is poor for Pechay.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.408Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 51,
+  "fields": {
+    "consultation": 2,
+    "crop": 16,
+    "score": 0,
+    "explanation_text": "",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.413Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 52,
+  "fields": {
+    "consultation": 2,
+    "crop": 1,
+    "score": 21,
+    "explanation_text": "+15 points: Rice prefers clay soil.\n+10 points: Current season supports Rice.\n+8 points: Crop preference aligns with Rice.\n-12 points: Water condition is poor for Rice.",
+    "is_recommended": true,
+    "is_avoid": false,
+    "rank_order": 1,
+    "created_at": "2026-03-19T18:43:52.417Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 53,
+  "fields": {
+    "consultation": 2,
+    "crop": 12,
+    "score": -2,
+    "explanation_text": "+10 points: Current season supports Rubber.\n-12 points: Water condition is poor for Rubber.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.422Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 54,
+  "fields": {
+    "consultation": 2,
+    "crop": 7,
+    "score": 8,
+    "explanation_text": "+8 points: Crop preference aligns with Soybean.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.428Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 55,
+  "fields": {
+    "consultation": 2,
+    "crop": 27,
+    "score": -12,
+    "explanation_text": "-12 points: Water condition is poor for Squash.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.434Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 56,
+  "fields": {
+    "consultation": 2,
+    "crop": 25,
+    "score": 0,
+    "explanation_text": "",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.440Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 57,
+  "fields": {
+    "consultation": 2,
+    "crop": 13,
+    "score": -4,
+    "explanation_text": "+8 points: Crop preference aligns with Sugarcane.\n-12 points: Water condition is poor for Sugarcane.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.449Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 58,
+  "fields": {
+    "consultation": 2,
+    "crop": 4,
+    "score": 15,
+    "explanation_text": "+15 points: Water level suits Sweet Potato (Camote).",
+    "is_recommended": true,
+    "is_avoid": false,
+    "rank_order": 2,
+    "created_at": "2026-03-19T18:43:52.454Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 59,
+  "fields": {
+    "consultation": 2,
+    "crop": 21,
+    "score": 0,
+    "explanation_text": "",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.460Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 60,
+  "fields": {
+    "consultation": 2,
+    "crop": 2,
+    "score": 8,
+    "explanation_text": "+8 points: Crop preference aligns with Yellow Corn.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T18:43:52.464Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 61,
+  "fields": {
+    "consultation": 3,
+    "crop": 11,
+    "score": 10,
+    "explanation_text": "+10 points: Current season supports Abaca.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.288Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 62,
+  "fields": {
+    "consultation": 3,
+    "crop": 24,
+    "score": 23,
+    "explanation_text": "+15 points: Water level suits Ampalaya.\n+8 points: Crop preference aligns with Ampalaya.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.290Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 63,
+  "fields": {
+    "consultation": 3,
+    "crop": 18,
+    "score": 25,
+    "explanation_text": "+15 points: Water level suits Avocado.\n+10 points: Current season supports Avocado.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.292Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 64,
+  "fields": {
+    "consultation": 3,
+    "crop": 14,
+    "score": 10,
+    "explanation_text": "+10 points: Current season supports Banana.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.293Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 65,
+  "fields": {
+    "consultation": 3,
+    "crop": 26,
+    "score": 33,
+    "explanation_text": "+15 points: Water level suits Cabbage.\n+10 points: Current season supports Cabbage.\n+8 points: Crop preference aligns with Cabbage.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.295Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 66,
+  "fields": {
+    "consultation": 3,
+    "crop": 10,
+    "score": 10,
+    "explanation_text": "+10 points: Current season supports Cacao.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.296Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 67,
+  "fields": {
+    "consultation": 3,
+    "crop": 17,
+    "score": 15,
+    "explanation_text": "+15 points: Water level suits Calamansi.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.298Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 68,
+  "fields": {
+    "consultation": 3,
+    "crop": 3,
+    "score": 15,
+    "explanation_text": "+15 points: Cassava prefers sandy soil.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.299Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 69,
+  "fields": {
+    "consultation": 3,
+    "crop": 8,
+    "score": 25,
+    "explanation_text": "+15 points: Water level suits Coconut.\n+10 points: Current season supports Coconut.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.301Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 70,
+  "fields": {
+    "consultation": 3,
+    "crop": 9,
+    "score": 25,
+    "explanation_text": "+15 points: Water level suits Coffee.\n+10 points: Current season supports Coffee.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.303Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 71,
+  "fields": {
+    "consultation": 3,
+    "crop": 22,
+    "score": 23,
+    "explanation_text": "+15 points: Water level suits Eggplant.\n+8 points: Crop preference aligns with Eggplant.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.305Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 72,
+  "fields": {
+    "consultation": 3,
+    "crop": 20,
+    "score": 23,
+    "explanation_text": "+15 points: Garlic prefers sandy soil.\n+8 points: Crop preference aligns with Garlic.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.306Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 73,
+  "fields": {
+    "consultation": 3,
+    "crop": 28,
+    "score": 33,
+    "explanation_text": "+15 points: Water level suits Ginger.\n+10 points: Current season supports Ginger.\n+8 points: Crop preference aligns with Ginger.",
+    "is_recommended": true,
+    "is_avoid": false,
+    "rank_order": 3,
+    "created_at": "2026-03-19T19:13:01.308Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 74,
+  "fields": {
+    "consultation": 3,
+    "crop": 29,
+    "score": 33,
+    "explanation_text": "+15 points: Water level suits Lettuce.\n+10 points: Current season supports Lettuce.\n+8 points: Crop preference aligns with Lettuce.",
+    "is_recommended": true,
+    "is_avoid": false,
+    "rank_order": 2,
+    "created_at": "2026-03-19T19:13:01.310Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 75,
+  "fields": {
+    "consultation": 3,
+    "crop": 15,
+    "score": 30,
+    "explanation_text": "+15 points: Mango prefers sandy soil.\n+15 points: Water level suits Mango.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.312Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 76,
+  "fields": {
+    "consultation": 3,
+    "crop": 5,
+    "score": 0,
+    "explanation_text": "",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.313Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 77,
+  "fields": {
+    "consultation": 3,
+    "crop": 23,
+    "score": 38,
+    "explanation_text": "+15 points: Okra prefers sandy soil.\n+15 points: Water level suits Okra.\n+8 points: Crop preference aligns with Okra.",
+    "is_recommended": true,
+    "is_avoid": false,
+    "rank_order": 1,
+    "created_at": "2026-03-19T19:13:01.315Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 78,
+  "fields": {
+    "consultation": 3,
+    "crop": 19,
+    "score": 23,
+    "explanation_text": "+15 points: Onion prefers sandy soil.\n+8 points: Crop preference aligns with Onion.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.317Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 79,
+  "fields": {
+    "consultation": 3,
+    "crop": 6,
+    "score": 30,
+    "explanation_text": "+15 points: Peanut prefers sandy soil.\n+15 points: Water level suits Peanut.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.321Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 80,
+  "fields": {
+    "consultation": 3,
+    "crop": 30,
+    "score": 23,
+    "explanation_text": "+15 points: Water level suits Pechay.\n+8 points: Crop preference aligns with Pechay.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.323Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 81,
+  "fields": {
+    "consultation": 3,
+    "crop": 16,
+    "score": 30,
+    "explanation_text": "+15 points: Pineapple prefers sandy soil.\n+15 points: Water level suits Pineapple.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.325Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 82,
+  "fields": {
+    "consultation": 3,
+    "crop": 1,
+    "score": 10,
+    "explanation_text": "+10 points: Current season supports Rice.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.327Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 83,
+  "fields": {
+    "consultation": 3,
+    "crop": 12,
+    "score": 25,
+    "explanation_text": "+15 points: Water level suits Rubber.\n+10 points: Current season supports Rubber.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.329Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 84,
+  "fields": {
+    "consultation": 3,
+    "crop": 7,
+    "score": 15,
+    "explanation_text": "+15 points: Water level suits Soybean.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.331Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 85,
+  "fields": {
+    "consultation": 3,
+    "crop": 27,
+    "score": 23,
+    "explanation_text": "+15 points: Water level suits Squash.\n+8 points: Crop preference aligns with Squash.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.333Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 86,
+  "fields": {
+    "consultation": 3,
+    "crop": 25,
+    "score": 23,
+    "explanation_text": "+15 points: Water level suits String Beans.\n+8 points: Crop preference aligns with String Beans.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.335Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 87,
+  "fields": {
+    "consultation": 3,
+    "crop": 13,
+    "score": 15,
+    "explanation_text": "+15 points: Water level suits Sugarcane.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.337Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 88,
+  "fields": {
+    "consultation": 3,
+    "crop": 4,
+    "score": 15,
+    "explanation_text": "+15 points: Sweet Potato (Camote) prefers sandy soil.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.338Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 89,
+  "fields": {
+    "consultation": 3,
+    "crop": 21,
+    "score": 23,
+    "explanation_text": "+15 points: Water level suits Tomato.\n+8 points: Crop preference aligns with Tomato.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.340Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 90,
+  "fields": {
+    "consultation": 3,
+    "crop": 2,
+    "score": 15,
+    "explanation_text": "+15 points: Water level suits Yellow Corn.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:01.341Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 91,
+  "fields": {
+    "consultation": 4,
+    "crop": 11,
+    "score": -62,
+    "explanation_text": "-12 points: Water condition is poor for Abaca.\nAvoid: Abaca is strongly unsuitable when water availability is Low.",
+    "is_recommended": false,
+    "is_avoid": true,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.500Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 92,
+  "fields": {
+    "consultation": 4,
+    "crop": 24,
+    "score": 10,
+    "explanation_text": "+10 points: Current season supports Ampalaya.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.503Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 93,
+  "fields": {
+    "consultation": 4,
+    "crop": 18,
+    "score": 0,
+    "explanation_text": "",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.504Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 94,
+  "fields": {
+    "consultation": 4,
+    "crop": 14,
+    "score": -62,
+    "explanation_text": "-12 points: Water condition is poor for Banana.\nAvoid: Banana is strongly unsuitable when water availability is Low.",
+    "is_recommended": false,
+    "is_avoid": true,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.506Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 95,
+  "fields": {
+    "consultation": 4,
+    "crop": 26,
+    "score": -62,
+    "explanation_text": "-12 points: Water condition is poor for Cabbage.\nAvoid: Cabbage is strongly unsuitable during Dry season conditions.",
+    "is_recommended": false,
+    "is_avoid": true,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.508Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 96,
+  "fields": {
+    "consultation": 4,
+    "crop": 10,
+    "score": -62,
+    "explanation_text": "-12 points: Water condition is poor for Cacao.\nAvoid: Cacao is strongly unsuitable when water availability is Low.",
+    "is_recommended": false,
+    "is_avoid": true,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.510Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 97,
+  "fields": {
+    "consultation": 4,
+    "crop": 17,
+    "score": 10,
+    "explanation_text": "+10 points: Current season supports Calamansi.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.512Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 98,
+  "fields": {
+    "consultation": 4,
+    "crop": 3,
+    "score": 25,
+    "explanation_text": "+15 points: Water level suits Cassava.\n+10 points: Current season supports Cassava.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.513Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 99,
+  "fields": {
+    "consultation": 4,
+    "crop": 8,
+    "score": -12,
+    "explanation_text": "-12 points: Water condition is poor for Coconut.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.515Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 100,
+  "fields": {
+    "consultation": 4,
+    "crop": 9,
+    "score": -12,
+    "explanation_text": "-12 points: Water condition is poor for Coffee.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.516Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 101,
+  "fields": {
+    "consultation": 4,
+    "crop": 22,
+    "score": 10,
+    "explanation_text": "+10 points: Current season supports Eggplant.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.518Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 102,
+  "fields": {
+    "consultation": 4,
+    "crop": 20,
+    "score": 25,
+    "explanation_text": "+15 points: Water level suits Garlic.\n+10 points: Current season supports Garlic.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.520Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 103,
+  "fields": {
+    "consultation": 4,
+    "crop": 28,
+    "score": -12,
+    "explanation_text": "-12 points: Water condition is poor for Ginger.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.522Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 104,
+  "fields": {
+    "consultation": 4,
+    "crop": 29,
+    "score": -62,
+    "explanation_text": "-12 points: Water condition is poor for Lettuce.\nAvoid: Lettuce is strongly unsuitable during Dry season conditions.",
+    "is_recommended": false,
+    "is_avoid": true,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.523Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 105,
+  "fields": {
+    "consultation": 4,
+    "crop": 15,
+    "score": 10,
+    "explanation_text": "+10 points: Current season supports Mango.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.525Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 106,
+  "fields": {
+    "consultation": 4,
+    "crop": 5,
+    "score": 25,
+    "explanation_text": "+15 points: Water level suits Mungbean.\n+10 points: Current season supports Mungbean.",
+    "is_recommended": true,
+    "is_avoid": false,
+    "rank_order": 3,
+    "created_at": "2026-03-19T19:13:12.527Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 107,
+  "fields": {
+    "consultation": 4,
+    "crop": 23,
+    "score": 10,
+    "explanation_text": "+10 points: Current season supports Okra.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.528Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 108,
+  "fields": {
+    "consultation": 4,
+    "crop": 19,
+    "score": 25,
+    "explanation_text": "+15 points: Water level suits Onion.\n+10 points: Current season supports Onion.",
+    "is_recommended": true,
+    "is_avoid": false,
+    "rank_order": 2,
+    "created_at": "2026-03-19T19:13:12.530Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 109,
+  "fields": {
+    "consultation": 4,
+    "crop": 6,
+    "score": 10,
+    "explanation_text": "+10 points: Current season supports Peanut.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.531Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 110,
+  "fields": {
+    "consultation": 4,
+    "crop": 30,
+    "score": -2,
+    "explanation_text": "+10 points: Current season supports Pechay.\n-12 points: Water condition is poor for Pechay.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.533Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 111,
+  "fields": {
+    "consultation": 4,
+    "crop": 16,
+    "score": 10,
+    "explanation_text": "+10 points: Current season supports Pineapple.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.534Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 112,
+  "fields": {
+    "consultation": 4,
+    "crop": 1,
+    "score": -39,
+    "explanation_text": "+15 points: Rice prefers clay soil.\n+8 points: Crop preference aligns with Rice.\n-12 points: Water condition is poor for Rice.\nAvoid: Rice is strongly unsuitable when water availability is Low.",
+    "is_recommended": false,
+    "is_avoid": true,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.536Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 113,
+  "fields": {
+    "consultation": 4,
+    "crop": 12,
+    "score": -12,
+    "explanation_text": "-12 points: Water condition is poor for Rubber.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.537Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 114,
+  "fields": {
+    "consultation": 4,
+    "crop": 7,
+    "score": 18,
+    "explanation_text": "+10 points: Current season supports Soybean.\n+8 points: Crop preference aligns with Soybean.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.539Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 115,
+  "fields": {
+    "consultation": 4,
+    "crop": 27,
+    "score": -2,
+    "explanation_text": "+10 points: Current season supports Squash.\n-12 points: Water condition is poor for Squash.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.540Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 116,
+  "fields": {
+    "consultation": 4,
+    "crop": 25,
+    "score": 10,
+    "explanation_text": "+10 points: Current season supports String Beans.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.542Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 117,
+  "fields": {
+    "consultation": 4,
+    "crop": 13,
+    "score": 6,
+    "explanation_text": "+10 points: Current season supports Sugarcane.\n+8 points: Crop preference aligns with Sugarcane.\n-12 points: Water condition is poor for Sugarcane.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.543Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 118,
+  "fields": {
+    "consultation": 4,
+    "crop": 4,
+    "score": 25,
+    "explanation_text": "+15 points: Water level suits Sweet Potato (Camote).\n+10 points: Current season supports Sweet Potato (Camote).",
+    "is_recommended": true,
+    "is_avoid": false,
+    "rank_order": 1,
+    "created_at": "2026-03-19T19:13:12.545Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 119,
+  "fields": {
+    "consultation": 4,
+    "crop": 21,
+    "score": 10,
+    "explanation_text": "+10 points: Current season supports Tomato.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.547Z"
+  }
+},
+{
+  "model": "expert_system.consultationresult",
+  "pk": 120,
+  "fields": {
+    "consultation": 4,
+    "crop": 2,
+    "score": 18,
+    "explanation_text": "+10 points: Current season supports Yellow Corn.\n+8 points: Crop preference aligns with Yellow Corn.",
+    "is_recommended": false,
+    "is_avoid": false,
+    "rank_order": null,
+    "created_at": "2026-03-19T19:13:12.548Z"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1200000$8bjEzRwFaVCNvnhpBUYtdu$KRX7zZpSS/k0TybnJCDaadwn/MV3URIFnbpJnrouhJ4=",
+    "last_login": "2026-03-19T18:26:51.953Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@example.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-03-19T18:02:58.497Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]

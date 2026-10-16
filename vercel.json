@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "outputDirectory": "staticfiles",
+  "functions": {
+    "api/wsgi.py": {
+      "includeFiles": "staticfiles/**"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "api/wsgi.py"
+    }
+  ],
+  "regions": [
+    "sin1"
+  ]
+}

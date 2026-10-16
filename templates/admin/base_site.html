@@ -1,0 +1,58 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}{% if subtitle %}{{ subtitle }} | {% endif %}{{ title }} | AgriRulePH Admin{% endblock %}
+
+{% block branding %}
+<div id="site-name" style="display:flex; align-items:center; gap:12px;">
+    <a href="{% url 'admin:index' %}">Django administration</a>
+    <a href="/" style="font-size:12px; padding:4px 8px; border-radius:4px; border:1px solid currentColor; text-decoration:none;">
+        Back to Main Website
+    </a>
+</div>
+{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block extrahead %}
+{{ block.super }}
+<script>
+    (function () {
+        const STORAGE_KEY = "theme";
+
+        function getTheme() {
+            const theme = localStorage.getItem(STORAGE_KEY);
+            return theme === "dark" ? "dark" : "light";
+        }
+
+        function setTheme(theme) {
+            const next = theme === "dark" ? "dark" : "light";
+            document.documentElement.setAttribute("data-theme", next);
+            localStorage.setItem(STORAGE_KEY, next);
+        }
+
+        // Never keep Django's "auto" mode in this project.
+        setTheme(getTheme());
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggle = document.querySelector(".theme-toggle");
+            if (!toggle) return;
+
+            // Capture first to block Django's built-in 3-state cycle.
+            toggle.addEventListener(
+                "click",
+                function (event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    if (typeof event.stopImmediatePropagation === "function") {
+                        event.stopImmediatePropagation();
+                    }
+                    const current = getTheme();
+                    setTheme(current === "dark" ? "light" : "dark");
+                },
+                true
+            );
+        });
+    })();
+</script>
+{% endblock %}

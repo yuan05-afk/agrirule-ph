@@ -1,0 +1,228 @@
+{% extends 'base.html' %}
+{% block title %}Decision Analytics | AgriRulePH{% endblock %}
+{% block content %}
+<div class="mb-8 flex flex-col md:flex-row md:justify-between md:items-end gap-4">
+    <div>
+        <h1 class="text-3xl tracking-tight font-semibold text-stone-900">Decision Analytics</h1>
+        <p class="text-sm text-stone-500 mt-1">Consultation timestamp: {{ consultation.created_at|date:"F j, Y, g:i a" }}</p>
+    </div>
+    <div class="flex flex-wrap gap-2">
+        <a href="{% url 'results' consultation.id %}" class="bg-white border border-stone-200 text-stone-700 px-4 py-2 rounded-xl text-sm font-medium hover:bg-stone-50">Back to Results</a>
+        <a href="{% url 'consult' %}" class="bg-stone-800 text-white px-4 py-2 rounded-xl text-sm font-medium hover:bg-stone-900">New Consultation</a>
+    </div>
+</div>
+
+<div id="analytics-loading" class="bg-white border border-stone-200 rounded-2xl shadow-sm p-5 mb-6">
+    <p class="text-sm text-stone-600">Loading analytics data...</p>
+</div>
+
+<div id="analytics-error" class="hidden bg-red-50 border border-red-200 rounded-2xl p-5 mb-6">
+    <p class="text-sm text-red-700 mb-3">Failed to load analytics data.</p>
+    <button id="analytics-retry" type="button" class="bg-red-600 text-white px-3 py-1.5 rounded-lg text-sm">Retry</button>
+</div>
+
+<div id="analytics-content" class="hidden space-y-6">
+    <div class="bg-white border border-stone-200 rounded-2xl shadow-sm p-5">
+        <h2 class="text-sm font-semibold text-stone-900 mb-3">Summary</h2>
+        <div id="summary-content" class="space-y-3 text-sm text-stone-700"></div>
+    </div>
+
+    <div class="bg-white border border-stone-200 rounded-2xl shadow-sm p-5">
+        <h2 class="text-sm font-semibold text-stone-900 mb-3">Top Recommendation Podium</h2>
+        <div id="podium-content" class="space-y-2"></div>
+    </div>
+
+    <div class="bg-white border border-stone-200 rounded-2xl shadow-sm p-5">
+        <h2 class="text-sm font-semibold text-stone-900 mb-3">Category Opportunity</h2>
+        <div id="category-content" class="space-y-2"></div>
+    </div>
+
+    <div class="bg-white border border-stone-200 rounded-2xl shadow-sm p-5">
+        <h2 class="text-sm font-semibold text-stone-900 mb-3">Condition Match Strength</h2>
+        <div id="factor-content" class="space-y-2"></div>
+    </div>
+
+    <div class="bg-white border border-stone-200 rounded-2xl shadow-sm p-5">
+        <h2 class="text-sm font-semibold text-stone-900 mb-3">Trade-off Comparison</h2>
+        <div id="tradeoff-content" class="grid grid-cols-1 md:grid-cols-3 gap-3"></div>
+    </div>
+
+    <div class="bg-white border border-stone-200 rounded-2xl shadow-sm p-5">
+        <h2 class="text-sm font-semibold text-stone-900 mb-3">What-If Analysis</h2>
+        <div id="whatif-content" class="space-y-2"></div>
+    </div>
+
+    <div class="bg-white border border-stone-200 rounded-2xl shadow-sm p-5">
+        <h2 class="text-sm font-semibold text-stone-900 mb-3">Field Adjustment Opportunities</h2>
+        <ul id="field-adjustments-content" class="list-disc pl-5 text-sm text-stone-700 space-y-1"></ul>
+    </div>
+
+    <div class="bg-white border border-stone-200 rounded-2xl shadow-sm p-5">
+        <h2 class="text-sm font-semibold text-stone-900 mb-3">Suitability Tiers</h2>
+        <div id="tiers-content" class="grid grid-cols-1 md:grid-cols-3 gap-3"></div>
+    </div>
+
+    <div class="bg-white border border-stone-200 rounded-2xl shadow-sm overflow-hidden">
+        <div class="px-5 py-4 border-b border-stone-200">
+            <h2 class="text-sm font-semibold text-stone-900">Recommendation Insights</h2>
+        </div>
+        <div class="overflow-x-auto">
+            <table class="min-w-full divide-y divide-stone-200">
+                <thead class="bg-stone-50">
+                    <tr>
+                        <th class="px-4 py-2 text-left text-xs font-semibold text-stone-500 uppercase">Crop</th>
+                        <th class="px-4 py-2 text-left text-xs font-semibold text-stone-500 uppercase">Category</th>
+                        <th class="px-4 py-2 text-right text-xs font-semibold text-stone-500 uppercase">Score</th>
+                        <th class="px-4 py-2 text-right text-xs font-semibold text-stone-500 uppercase">Normalized</th>
+                        <th class="px-4 py-2 text-left text-xs font-semibold text-stone-500 uppercase">Strength</th>
+                    </tr>
+                </thead>
+                <tbody id="insights-content" class="divide-y divide-stone-200 bg-white"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+(() => {
+    const dataUrl = "{{ analytics_data_url }}";
+    const loadingEl = document.getElementById('analytics-loading');
+    const errorEl = document.getElementById('analytics-error');
+    const contentEl = document.getElementById('analytics-content');
+    const retryBtn = document.getElementById('analytics-retry');
+
+    const summaryEl = document.getElementById('summary-content');
+    const podiumEl = document.getElementById('podium-content');
+    const categoryEl = document.getElementById('category-content');
+    const factorEl = document.getElementById('factor-content');
+    const tradeoffEl = document.getElementById('tradeoff-content');
+    const whatIfEl = document.getElementById('whatif-content');
+    const fieldAdjustmentsEl = document.getElementById('field-adjustments-content');
+    const tiersEl = document.getElementById('tiers-content');
+    const insightsEl = document.getElementById('insights-content');
+
+    function safeList(items, emptyText) {
+        if (!items || items.length === 0) {
+            return `<p class="text-sm text-stone-500">${emptyText}</p>`;
+        }
+        return items.join('');
+    }
+
+    function render(payload) {
+        const summary = payload.summary || {};
+        const topCrop = summary.top_recommendation ? summary.top_recommendation.crop_name : 'No clear recommendation';
+        const topScore = summary.top_recommendation ? summary.top_recommendation.score : 'N/A';
+        summaryEl.innerHTML = `
+            <p><span class="font-semibold">Top crop:</span> ${topCrop}</p>
+            <p><span class="font-semibold">Score:</span> ${topScore}</p>
+            <p><span class="font-semibold">Decision status:</span> ${summary.decision_status || 'N/A'}</p>
+            <p><span class="font-semibold">Avoid count:</span> ${summary.avoid_count || 0}</p>
+            <p>${summary.quick_next_step || ''}</p>
+        `;
+
+        podiumEl.innerHTML = safeList(
+            (payload.top_recommendation_podium || []).map((row) => `
+                <div class="border border-stone-200 rounded-xl p-3 text-sm">
+                    <p class="font-semibold text-stone-900">#${row.rank} ${row.crop_name}</p>
+                    <p class="text-stone-600">${row.decision_role} | ${row.relative_position}</p>
+                </div>
+            `),
+            'No podium data available.'
+        );
+
+        categoryEl.innerHTML = safeList(
+            (payload.category_opportunity_chart || []).map((row) => `
+                <div class="text-sm text-stone-700">${row.category}: avg ${row.avg_score} (${row.count} crops)</div>
+            `),
+            'No category data available.'
+        );
+
+        factorEl.innerHTML = safeList(
+            (payload.condition_match_strength || []).map((row) => `
+                <div class="text-sm text-stone-700">${row.factor_label}: ${row.strength_score}% (${row.strength_label})</div>
+            `),
+            'No factor data available.'
+        );
+
+        tradeoffEl.innerHTML = safeList(
+            (payload.tradeoff_comparison || []).map((row) => `
+                <div class="border border-stone-200 rounded-xl p-3 text-sm">
+                    <p class="font-semibold text-stone-900">${row.crop_name}</p>
+                    <p class="text-stone-600">${row.category} | ${row.strength}</p>
+                    <p class="text-stone-700 mt-2">${row.planning_note}</p>
+                </div>
+            `),
+            'No trade-off data available.'
+        );
+
+        whatIfEl.innerHTML = safeList(
+            (payload.what_if_scenarios || []).map((row) => `
+                <div class="border border-stone-200 rounded-xl p-3 text-sm">
+                    <p class="font-semibold text-stone-900">${row.name}</p>
+                    <p class="text-stone-600">${row.change}</p>
+                    <p class="text-stone-700">Top crop: ${row.top_crop} (delta: ${row.score_delta})</p>
+                </div>
+            `),
+            'No what-if scenarios available.'
+        );
+
+        fieldAdjustmentsEl.innerHTML = safeList(
+            (payload.field_adjustments || []).map((line) => `<li>${line}</li>`),
+            'No field adjustments identified.'
+        );
+
+        const tiers = payload.suitability_tiers || {};
+        tiersEl.innerHTML = safeList(
+            Object.keys(tiers).map((tierName) => {
+                const rows = tiers[tierName] || [];
+                const tierRows = rows.length
+                    ? rows.map((row) => `<div class="text-xs text-stone-700">${row.crop_name} (${row.score_percent}%)</div>`).join('')
+                    : '<div class="text-xs text-stone-500">No crops</div>';
+                return `
+                    <div class="border border-stone-200 rounded-xl p-3">
+                        <p class="text-xs font-semibold text-stone-800 mb-2">${tierName}</p>
+                        ${tierRows}
+                    </div>
+                `;
+            }),
+            'No tier data available.'
+        );
+
+        insightsEl.innerHTML = safeList(
+            (payload.insights_rows || []).map((row) => `
+                <tr>
+                    <td class="px-4 py-2 text-sm text-stone-900">${row.crop_name}</td>
+                    <td class="px-4 py-2 text-sm text-stone-600">${row.category}</td>
+                    <td class="px-4 py-2 text-sm text-stone-700 text-right">${row.score}</td>
+                    <td class="px-4 py-2 text-sm text-stone-700 text-right">${row.normalized_score}%</td>
+                    <td class="px-4 py-2 text-sm text-stone-700">${row.confidence_label}</td>
+                </tr>
+            `),
+            '<tr><td colspan="5" class="px-4 py-3 text-sm text-stone-500">No insight rows available.</td></tr>'
+        );
+    }
+
+    async function loadAnalytics() {
+        loadingEl.classList.remove('hidden');
+        errorEl.classList.add('hidden');
+        contentEl.classList.add('hidden');
+        try {
+            const response = await fetch(dataUrl, { headers: { 'Accept': 'application/json' } });
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+            const payload = await response.json();
+            render(payload);
+            contentEl.classList.remove('hidden');
+            loadingEl.classList.add('hidden');
+        } catch (err) {
+            loadingEl.classList.add('hidden');
+            errorEl.classList.remove('hidden');
+        }
+    }
+
+    retryBtn.addEventListener('click', loadAnalytics);
+    loadAnalytics();
+})();
+</script>
+{% endblock %}

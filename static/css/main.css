@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #faf9f8;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d6d3d1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a29e;
+}
+
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+}
+
+select:required:invalid {
+    color: #78716c;
+}
+
+select option {
+    color: #1c1917;
+}
+
+.analytics-bar-track {
+    width: 100%;
+    height: 0.5rem;
+    background: #e7e5e4;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.analytics-bar-fill {
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #34d399 0%, #059669 100%);
+}
+
+.analytics-bar-fill-stone {
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #94a3b8 0%, #475569 100%);
+}
+
+.analytics-bar-fill-amber {
+    height: 100%;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #fbbf24 0%, #d97706 100%);
+}
+
+.avoid-card {
+    border-left: 3px solid #fca5a5;
+}
+
+.avoid-badge {
+    color: #b91c1c;
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+}
+
+.gap-chart-grid {
+    min-height: 14rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    align-items: end;
+}
+
+.gap-chart-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 13rem;
+}
+
+.gap-chart-score {
+    margin-bottom: 0.4rem;
+}
+
+.gap-chart-bar-slot {
+    height: 9rem;
+    width: 100%;
+    max-width: 5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.gap-chart-bar {
+    width: 100%;
+    background: #475569;
+    border-radius: 0.375rem 0.375rem 0 0;
+    position: relative;
+}
+
+.lollipop-track {
+    width: 100%;
+    height: 0.35rem;
+    background: #e7e5e4;
+    border-radius: 999px;
+    position: relative;
+    overflow: visible;
+}
+
+.lollipop-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #34d399 0%, #059669 100%);
+    border-radius: 999px;
+    position: relative;
+}
+
+.lollipop-dot {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 999px;
+    background: #047857;
+    border: 2px solid #d1fae5;
+    position: absolute;
+    right: -0.35rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.podium-grid {
+    min-height: 15.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    align-items: end;
+    position: relative;
+}
+
+.podium-grid::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0.75rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #e2e8f0 0%, #cbd5e1 50%, #e2e8f0 100%);
+}
+
+.podium-col {
+    min-height: 14.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+}
+
+.podium-card {
+    width: 100%;
+    background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+    border: 1px solid #cbd5e1;
+    border-radius: 0.9rem 0.9rem 0.45rem 0.45rem;
+    padding: 0.75rem;
+    overflow: hidden;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+    position: relative;
+}
+
+.podium-card.rank-1 {
+    background: linear-gradient(180deg, #fff7d6 0%, #fde68a 100%);
+    border-color: #f5d26a;
+}
+
+.podium-card.rank-2 {
+    background: linear-gradient(180deg, #f8fafc 0%, #cbd5e1 100%);
+    border-color: #c0cad8;
+}
+
+.podium-card.rank-3 {
+    background: linear-gradient(180deg, #fff0df 0%, #fed7aa 100%);
+    border-color: #f7c69b;
+}
+
+.podium-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.podium-rank {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #1f2937;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    border-radius: 999px;
+    padding: 0.1rem 0.45rem;
+}
+
+.podium-role {
+    font-size: 0.62rem;
+    font-weight: 600;
+    color: #334155;
+    text-align: right;
+}
+
+.podium-chip {
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    color: #334155;
+}
+
+.podium-insight {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px dashed rgba(148, 163, 184, 0.35);
+    border-radius: 0.5rem;
+    padding: 0.35rem 0.45rem;
+}
+
+.hero-title {
+    text-wrap: balance;
+}
+
+.hero-word {
+    display: inline-block;
+    transition: transform 220ms ease, text-shadow 220ms ease, color 220ms ease;
+    transform-origin: center bottom;
+}
+
+.hero-word:hover {
+    transform: translateY(-3px) scale(1.05);
+    text-shadow: 0 8px 16px rgba(15, 23, 42, 0.16);
+}
+
+.hero-for {
+    font-size: 0.52em;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    vertical-align: middle;
+}
+
+.commodity-carousel {
+    overflow: hidden;
+    position: relative;
+    padding-block: 0.25rem;
+}
+
+.commodity-track {
+    display: flex;
+    gap: 1.25rem;
+    width: max-content;
+    animation: commodityMarquee 36s linear infinite;
+    will-change: transform;
+}
+
+.commodity-carousel:hover .commodity-track {
+    animation-play-state: paused;
+}
+
+.commodity-slide {
+    width: 20rem;
+    flex: 0 0 auto;
+}
+
+@keyframes commodityMarquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .commodity-slide {
+        width: 17rem;
+    }
+    .commodity-track {
+        animation-duration: 28s;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .commodity-track {
+        animation: none;
+    }
+}
+
+.guide-panel {
+    border: 1px solid #e7e5e4;
+    border-radius: 0.85rem;
+    background: #fafaf9;
+    padding: 0.9rem 0.95rem;
+}
+
+.guide-panel-enter {
+    animation: guidePanelIn 220ms ease-out;
+}
+
+.guide-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 0.7rem;
+}
+
+.guide-choices {
+    display: grid;
+    gap: 0.55rem;
+}
+
+.guide-choice-card {
+    border: 1px solid #e7e5e4;
+    background: #ffffff;
+    border-radius: 0.7rem;
+    padding: 0.6rem 0.7rem;
+}
+
+.guide-choice-heading {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.35rem;
+}
+
+.guide-choice-line {
+    font-size: 0.74rem;
+    color: #44403c;
+    line-height: 1.45;
+}
+
+.guide-choice-line + .guide-choice-line {
+    margin-top: 0.22rem;
+}
+
+@keyframes guidePanelIn {
+    0% {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.consult-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.consult-main {
+    width: min(100%, 56rem);
+    margin-inline: auto;
+    transition: width 260ms ease, margin 260ms ease, transform 260ms ease;
+}
+
+.consult-aside {
+    width: 0;
+    opacity: 0;
+    transform: translateX(16px);
+    overflow: hidden;
+    pointer-events: none;
+    transition: width 260ms ease, opacity 200ms ease, transform 260ms ease;
+}
+
+.consult-layout.guide-open .consult-main {
+    width: calc(100% - 22rem - 1.5rem);
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.consult-layout.guide-open .consult-aside {
+    width: 22rem;
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+@media (max-width: 1023px) {
+    .consult-layout {
+        flex-direction: column;
+    }
+
+    .consult-main {
+        width: 100%;
+        margin-inline: 0;
+    }
+
+    .consult-aside {
+        width: 100%;
+        max-height: 0;
+        opacity: 0;
+        transform: translateY(-6px);
+        transition: max-height 260ms ease, opacity 200ms ease, transform 260ms ease;
+    }
+
+    .consult-layout.guide-open .consult-aside {
+        width: 100%;
+        max-height: 46rem;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

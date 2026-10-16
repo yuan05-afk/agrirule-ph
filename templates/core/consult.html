@@ -1,0 +1,286 @@
+﻿{% extends 'base.html' %}
+{% block title %}Consult | AgriRulePH{% endblock %}
+{% block content %}
+<div class="max-w-6xl mx-auto">
+    <div class="mb-8">
+        <h1 class="text-3xl tracking-tight font-semibold text-stone-900">Crop Consultation</h1>
+        <p class="text-sm text-stone-500 mt-2">Provide farm conditions to generate recommendations.</p>
+    </div>
+
+    <div id="consult-layout" class="consult-layout">
+        <div class="consult-main bg-white border border-stone-200 rounded-2xl shadow-sm overflow-hidden">
+            <div class="bg-stone-50/50 px-6 py-4 border-b border-stone-200">
+                <h2 class="text-sm font-semibold text-stone-800">Farm Conditions Profile</h2>
+            </div>
+            <form method="post" class="p-6 space-y-6" id="consult-form">
+                {% csrf_token %}
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div><label class="block text-sm font-medium text-stone-700 mb-1.5">Season</label>{{ form.season }}</div>
+                    <div><label class="block text-sm font-medium text-stone-700 mb-1.5">Water Availability</label>{{ form.water_availability }}</div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div><label class="block text-sm font-medium text-stone-700 mb-1.5">Soil Type</label>{{ form.soil_type }}</div>
+                    <div><label class="block text-sm font-medium text-stone-700 mb-1.5">Soil pH Category</label>{{ form.soil_ph_category }}</div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div><label class="block text-sm font-medium text-stone-700 mb-1.5">Farm Type</label>{{ form.farm_type }}</div>
+                    <div><label class="block text-sm font-medium text-stone-700 mb-1.5">Budget Level</label>{{ form.budget_level }}</div>
+                    <div><label class="block text-sm font-medium text-stone-700 mb-1.5">Crop Preference</label>{{ form.crop_preference }}</div>
+                </div>
+                {% if form.errors %}
+                <div class="text-sm text-red-600 bg-red-50 border border-red-200 rounded-xl px-4 py-3">
+                    Please review the form. All fields are required.
+                </div>
+                {% endif %}
+                <div class="pt-4 flex justify-end gap-3 border-t border-stone-100">
+                    <button type="reset" class="bg-white border border-stone-300 hover:bg-stone-50 text-stone-700 px-6 py-2 rounded-xl text-sm font-medium transition-colors shadow-sm">Reset</button>
+                    <button type="submit" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 rounded-xl text-sm font-medium">Generate Recommendation</button>
+                </div>
+            </form>
+        </div>
+
+        <aside id="guide-aside" class="consult-aside bg-white border border-stone-200 rounded-2xl shadow-sm p-5 h-fit" aria-hidden="true">
+            <div id="guide-panel" class="guide-panel" aria-live="polite">
+                <div id="guide-title" class="guide-title"></div>
+                <div id="guide-choices" class="guide-choices"></div>
+            </div>
+        </aside>
+    </div>
+</div>
+
+<script>
+    (function () {
+        const consultLayout = document.getElementById('consult-layout');
+        const guideAside = document.getElementById('guide-aside');
+        const guidePanel = document.getElementById('guide-panel');
+        const guideTitle = document.getElementById('guide-title');
+        const guideChoices = document.getElementById('guide-choices');
+        let activeField = null;
+        let lastFocusedField = null;
+        let lastFocusAt = 0;
+        const guideContent = {
+            season: {
+                title: 'Season',
+                choices: [
+                    {
+                        label: 'Wet',
+                        best_for: 'crops that can tolerate high moisture, frequent rain, and wetter field conditions.',
+                        use_when: 'the planting period falls during rainy months or when the farm usually receives frequent rainfall.'
+                    },
+                    {
+                        label: 'Dry',
+                        best_for: 'crops that perform better in lower-rainfall conditions or can handle drier weather.',
+                        use_when: 'the planting period falls during hotter months with limited rainfall.'
+                    }
+                ]
+            },
+            water_availability: {
+                title: 'Water Availability',
+                choices: [
+                    {
+                        label: 'Low',
+                        best_for: 'drought-tolerant, hardy, or low-water crops.',
+                        use_when: 'irrigation is limited, unreliable, or the farm depends mostly on rainfall.'
+                    },
+                    {
+                        label: 'Moderate',
+                        best_for: 'crops with balanced water needs and moderate irrigation support.',
+                        use_when: 'the farm has some irrigation, but water still needs to be managed carefully.'
+                    },
+                    {
+                        label: 'High',
+                        best_for: 'crops that need regular watering or perform better with reliable moisture.',
+                        use_when: 'the farm has dependable irrigation or strong year-round water access.'
+                    }
+                ]
+            },
+            soil_type: {
+                title: 'Soil Type',
+                choices: [
+                    {
+                        label: 'Clay',
+                        best_for: 'crops that benefit from strong moisture retention and heavier soil conditions.',
+                        use_when: 'the soil is sticky when wet, holds water for a long time, and drains slowly.'
+                    },
+                    {
+                        label: 'Loam',
+                        best_for: 'a wide variety of crops because of its balanced drainage and fertility.',
+                        use_when: 'the soil is soft, crumbly, and generally considered productive and well-balanced.'
+                    },
+                    {
+                        label: 'Sandy',
+                        best_for: 'crops that prefer quick drainage and do not need prolonged moisture.',
+                        use_when: 'the soil is loose, coarse, and dries out quickly after rain or watering.'
+                    },
+                    {
+                        label: 'Silt',
+                        best_for: 'crops that perform well in fertile soil with moderate water retention.',
+                        use_when: 'the soil feels smooth and fine, with better fertility than sandy soil.'
+                    }
+                ]
+            },
+            soil_ph_category: {
+                title: 'Soil pH Category',
+                choices: [
+                    {
+                        label: 'Acidic',
+                        best_for: 'crops that can tolerate lower-pH soil conditions.',
+                        use_when: 'soil testing or local knowledge shows that the soil is acidic.'
+                    },
+                    {
+                        label: 'Neutral',
+                        best_for: 'the widest range of crops because nutrient availability is generally more favorable.',
+                        use_when: 'the soil has no strong acidity or alkalinity issue.'
+                    },
+                    {
+                        label: 'Alkaline',
+                        best_for: 'crops that can tolerate higher-pH soil conditions.',
+                        use_when: 'soil testing or local knowledge shows that the soil is alkaline.'
+                    }
+                ]
+            },
+            farm_type: {
+                title: 'Farm Type',
+                choices: [
+                    {
+                        label: 'Irrigated',
+                        best_for: 'crops that need more stable and predictable water supply.',
+                        use_when: 'the farm has access to canals, pumps, sprinklers, hoses, or other irrigation systems.'
+                    },
+                    {
+                        label: 'Rainfed',
+                        best_for: 'crops that can match natural rainfall patterns and tolerate less controlled water supply.',
+                        use_when: 'the farm depends mostly or entirely on rainfall.'
+                    }
+                ]
+            },
+            budget_level: {
+                title: 'Budget Level (per cropping cycle)',
+                choices: [
+                    {
+                        label: 'Low - <= &#8369;25,000',
+                        best_for: 'lower-input, lower-cost, and lower-risk crops.',
+                        use_when: 'the farmer has limited capital for seeds, fertilizer, irrigation, labor, and pest control.'
+                    },
+                    {
+                        label: 'Medium - &#8369;25,001 to &#8369;75,000',
+                        best_for: 'crops that need moderate investment and balanced farm inputs.',
+                        use_when: 'the farmer can support a workable but still controlled production budget.'
+                    },
+                    {
+                        label: 'High - > &#8369;75,000',
+                        best_for: 'higher-input or more commercially oriented crops with stronger production support.',
+                        use_when: 'the farmer has enough capital for broader crop options and higher operating costs.'
+                    }
+                ]
+            },
+            crop_preference: {
+                title: 'Crop Preference',
+                choices: [
+                    {
+                        label: 'Staple',
+                        best_for: 'commonly used food crops that support regular food supply and practical production.',
+                        use_when: 'the goal is to prioritize staple-oriented crop planting.'
+                    },
+                    {
+                        label: 'Vegetable',
+                        best_for: 'crops with shorter turnover, active market demand, or fresh-produce selling potential.',
+                        use_when: 'the goal is to focus on vegetable production for selling or regular harvest cycles.'
+                    },
+                    {
+                        label: 'Resilient Crop',
+                        best_for: 'hardier crops that can better handle risk, limited water, or tighter production conditions.',
+                        use_when: 'the goal is to reduce risk and prioritize stress-tolerant crop choices.'
+                    }
+                ]
+            }
+        };
+
+        function showGuide(animate = true) {
+            consultLayout.classList.add('guide-open');
+            guideAside.setAttribute('aria-hidden', 'false');
+            if (!animate) return;
+            guidePanel.classList.remove('guide-panel-enter');
+            // Force reflow so animation replays each time.
+            void guidePanel.offsetWidth;
+            guidePanel.classList.add('guide-panel-enter');
+        }
+
+        function hideGuide() {
+            consultLayout.classList.remove('guide-open');
+            guideAside.setAttribute('aria-hidden', 'true');
+            activeField = null;
+        }
+
+        function renderGuide(fieldName, animate = true) {
+            const fieldGuide = guideContent[fieldName];
+            if (!fieldGuide) return;
+
+            const shouldAnimate = animate && (!consultLayout.classList.contains('guide-open') || activeField !== fieldName);
+            showGuide(shouldAnimate);
+            guideTitle.textContent = fieldGuide.title;
+
+            guideChoices.innerHTML = fieldGuide.choices
+                .map((choice) => [
+                    '<article class="guide-choice-card">',
+                    `<h3 class="guide-choice-heading">${choice.label}</h3>`,
+                    `<p class="guide-choice-line"><strong>Best for:</strong> ${choice.best_for}</p>`,
+                    `<p class="guide-choice-line"><strong>Use when:</strong> ${choice.use_when}</p>`,
+                    '</article>'
+                ].join(''))
+                .join('');
+
+            activeField = fieldName;
+        }
+
+        const fields = [
+            'season',
+            'water_availability',
+            'soil_type',
+            'soil_ph_category',
+            'farm_type',
+            'budget_level',
+            'crop_preference'
+        ];
+
+        const selectElements = fields
+            .map((name) => document.getElementById(`id_${name}`))
+            .filter(Boolean);
+
+        fields.forEach((name) => {
+            const element = document.getElementById(`id_${name}`);
+            if (!element) return;
+
+            element.addEventListener('focus', () => {
+                lastFocusedField = name;
+                lastFocusAt = Date.now();
+                renderGuide(name, true);
+            });
+            element.addEventListener('click', () => {
+                const justFocused = lastFocusedField === name && Date.now() - lastFocusAt < 220;
+                if (justFocused) return;
+                renderGuide(name, true);
+            });
+            element.addEventListener('change', () => renderGuide(name, false));
+        });
+
+        document.addEventListener('click', (event) => {
+            const target = event.target;
+            const clickedSelect = selectElements.some((element) => element.contains(target));
+            const clickedGuide = guideAside.contains(target);
+            if (!clickedSelect && !clickedGuide) {
+                hideGuide();
+            }
+        });
+
+        document.addEventListener('focusin', (event) => {
+            const target = event.target;
+            const focusedSelect = selectElements.some((element) => element.contains(target));
+            const focusedGuide = guideAside.contains(target);
+            if (!focusedSelect && !focusedGuide) {
+                hideGuide();
+            }
+        });
+    })();
+</script>
+{% endblock %}

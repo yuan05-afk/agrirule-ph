@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@source "../../templates/**/*.html";
+@source "../../core/**/*.py";
+@source "../../dashboard/**/*.py";
+@source "../../expert_system/**/*.py";

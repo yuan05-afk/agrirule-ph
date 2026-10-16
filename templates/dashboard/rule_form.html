@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}{% if is_edit %}Edit Rule{% else %}Add Rule{% endif %}{% endblock %}
+{% block content %}
+<div class="max-w-4xl mx-auto">
+    <h1 class="text-2xl tracking-tight font-semibold text-stone-900 mb-6">{% if is_edit %}Edit Rule{% else %}Add Rule{% endif %}</h1>
+    <div class="bg-white border border-stone-200 rounded-2xl shadow-sm overflow-hidden p-6">
+        <form method="post" class="space-y-5">
+            {% csrf_token %}
+            <div><label class="block text-sm font-medium text-stone-700 mb-1.5">Rule Name</label>{{ form.name }}</div>
+            <div><label class="block text-sm font-medium text-stone-700 mb-1.5">Target Crop</label>{{ form.crop }}</div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div><label class="block text-xs font-medium text-stone-600 mb-1">Season</label>{{ form.season_condition }}</div>
+                <div><label class="block text-xs font-medium text-stone-600 mb-1">Soil Type</label>{{ form.soil_type_condition }}</div>
+                <div><label class="block text-xs font-medium text-stone-600 mb-1">Water</label>{{ form.water_availability_condition }}</div>
+                <div><label class="block text-xs font-medium text-stone-600 mb-1">Farm Type</label>{{ form.farm_type_condition }}</div>
+                <div><label class="block text-xs font-medium text-stone-600 mb-1">Soil pH</label>{{ form.soil_ph_condition }}</div>
+                <div><label class="block text-xs font-medium text-stone-600 mb-1">Budget</label>{{ form.budget_level_condition }}</div>
+                <div><label class="block text-xs font-medium text-stone-600 mb-1">Preference</label>{{ form.crop_preference_condition }}</div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div><label class="block text-sm font-medium text-stone-700 mb-1.5">Rule Type</label>{{ form.rule_type }}</div>
+                <div><label class="block text-sm font-medium text-stone-700 mb-1.5">Score</label>{{ form.score }}</div>
+            </div>
+            <div><label class="block text-sm font-medium text-stone-700 mb-1.5">Explanation</label>{{ form.explanation }}</div>
+            <div class="flex items-center gap-3 text-sm text-stone-700">{{ form.is_active }} <span>Rule Active</span></div>
+            <div class="pt-5 border-t border-stone-100 flex justify-end gap-3">
+                <a href="{% url 'dashboard_rules_list' %}" class="px-4 py-2 text-sm font-medium text-stone-600">Cancel</a>
+                <button type="submit" class="bg-stone-800 hover:bg-stone-900 text-white px-6 py-2 rounded-xl text-sm font-medium">Save Rule</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
